@@ -1,0 +1,7360 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="186" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>GROUP ID</UpdateField_Name>
+          <CreateField_Name>ID</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>254</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field name="Response" size="18" source="TextInput:" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Bool" />
+            <Field description="Formula: if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif" name="ID" source="Formula: if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="294" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>GROUP ID</UpdateField_Name>
+          <CreateField_Name>Tuple</CreateField_Name>
+          <CreateField_Type>String</CreateField_Type>
+          <CreateField_Size>1000</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:T...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field name="Response" size="18" source="TextInput:" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Bool" />
+            <Field description="Formula: if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif" name="ID" source="Formula: if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif" type="Int32" />
+            <Field description="Formula: if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif" name="Tuple" size="1000" source="Formula: if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="258" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11004_10226a5ffb124212853f2e4a0c192385_\Engine_7400_e1d310639bdb4cada9a2c1f8e4ed92ab_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input11</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1373" />
+              <Fields>
+                <Field name="GROUP ID" />
+                <Field name="Response" />
+                <Field name="Flag" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>a</c>
+                  <c>AUTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>a</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>a</c>
+                  <c>HOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>a</c>
+                  <c>IMPROVEMENT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>a</c>
+                  <c>ETC</c>
+                  <c />
+                </r>
+                <r>
+                  <c>b</c>
+                  <c>CONTRACTORPRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>c</c>
+                  <c>ASKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>c</c>
+                  <c>BEST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>c</c>
+                  <c>BUY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>c</c>
+                  <c>MATCH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>c</c>
+                  <c>ONLINE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>c</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>c</c>
+                  <c>COMPETITOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>d</c>
+                  <c>LOWERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>d</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>d</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>d</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>d</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>ASKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>RECLINER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>CHEAPER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>WERE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>GETTING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>TELEPHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>INTE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>REPAIR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>OFF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>OUTOFWARRANTEE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>PROBLEM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>MALFUNCTIO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>ALL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>TYPES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>HOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>SERVICES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>MOST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>REC</c>
+                  <c />
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>TOOLS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>THINGS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>STORES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>DEAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>MAKER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>EVERYTHING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>BUY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>HAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>102</c>
+                  <c>ESSENTIALLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>102</c>
+                  <c>EVERY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>102</c>
+                  <c>TRANSACTION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>102</c>
+                  <c>NEGOTIATION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>109</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>109</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>109</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>NEEDED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>BARGAIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>PURCHASES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>HOPEFU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>ATT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>UVERSE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>PACKAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>MONTHLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>COSTS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>ATT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>OFF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>MON</c>
+                  <c />
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>BROUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>PRINTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>PRICES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>HELPED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>BUYIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>MUSCLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>MIDDLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>WINTERAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>FAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>135</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>135</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>135</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>DEPENDING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>STORE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>CAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>USUALLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>BETTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>RECEIVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>THAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>STATED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>RATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>BUNDLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>143</c>
+                  <c>FLEA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>143</c>
+                  <c>MARKET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>144</c>
+                  <c>OUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>144</c>
+                  <c>COUNTRY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>144</c>
+                  <c>LEATHER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>144</c>
+                  <c>JACKET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>INCREASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>CREDIT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>LIMIT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>DISCOVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>CARD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>AUTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>TRADEIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>SOMEWHAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>SAW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>SAID</c>
+                  <c />
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>HAVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>SEEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>LESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>ELSEWH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>USAA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>ASKING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>WHAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>DEAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>COULD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>ANTIQUE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>SHOP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>168</c>
+                  <c>WARRANTY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>168</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>169</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>169</c>
+                  <c>RECEIVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>169</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>172</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>172</c>
+                  <c>WASTE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>172</c>
+                  <c>TIME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>172</c>
+                  <c>PREFER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>172</c>
+                  <c>LOOKING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>172</c>
+                  <c>THI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>174</c>
+                  <c>AIR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>174</c>
+                  <c>CONDITIONER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>174</c>
+                  <c>REDUCTION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>175</c>
+                  <c>GOOD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>175</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>175</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>175</c>
+                  <c>HONDA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>175</c>
+                  <c>ACCORD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>178</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>178</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>178</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>178</c>
+                  <c>BOYFRIENDS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>178</c>
+                  <c>BILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>181</c>
+                  <c>ASKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>181</c>
+                  <c>RETAILER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>181</c>
+                  <c>MATCH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>181</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>181</c>
+                  <c>LAPTOP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>181</c>
+                  <c>AFTE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>195</c>
+                  <c>IT'S</c>
+                  <c />
+                </r>
+                <r>
+                  <c>195</c>
+                  <c>PAIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>195</c>
+                  <c>BUTT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>199</c>
+                  <c>UNSUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>217</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>217</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>217</c>
+                  <c>STAND</c>
+                  <c />
+                </r>
+                <r>
+                  <c>217</c>
+                  <c>WHICH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>218</c>
+                  <c>SEARS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>218</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>218</c>
+                  <c>COUPONS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>218</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>218</c>
+                  <c>ADVISE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>222</c>
+                  <c>RECENTLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>222</c>
+                  <c>ASKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>222</c>
+                  <c>OFF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>222</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>222</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>222</c>
+                  <c>WHICH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>222</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>224</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>224</c>
+                  <c>VERY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>224</c>
+                  <c>GOOD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>224</c>
+                  <c>OUTCOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>230</c>
+                  <c>CAMERA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>230</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>230</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>230</c>
+                  <c>BECAUSE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>230</c>
+                  <c>INSISTENCE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>233</c>
+                  <c>LAWN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>233</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>233</c>
+                  <c>BETTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>233</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>235</c>
+                  <c>WASHER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>235</c>
+                  <c>DRYERLOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>235</c>
+                  <c>COST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>239</c>
+                  <c>BOUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>239</c>
+                  <c>CLOTHING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>239</c>
+                  <c>SOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>239</c>
+                  <c>EASILY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>239</c>
+                  <c>REPAIRABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>239</c>
+                  <c>DAMA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>240</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>240</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>240</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>240</c>
+                  <c>SAVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>240</c>
+                  <c>ABOUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>248</c>
+                  <c>OFFERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>248</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>248</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>248</c>
+                  <c>ENDED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>248</c>
+                  <c>SOMEWHERE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>254</c>
+                  <c>UNWARENTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>254</c>
+                  <c>AUTOMATIC</c>
+                  <c />
+                </r>
+                <r>
+                  <c>254</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>254</c>
+                  <c>INCREASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>254</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>254</c>
+                  <c>LAWNS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>255</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>255</c>
+                  <c>MATTRESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>255</c>
+                  <c>SEARS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>255</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>257</c>
+                  <c>KITCHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>257</c>
+                  <c>TABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>257</c>
+                  <c>CHAIRS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>257</c>
+                  <c>HUTCH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>257</c>
+                  <c>LAST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>264</c>
+                  <c>OKTELE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>264</c>
+                  <c>SERVICELOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>264</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>268</c>
+                  <c>AUTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>284</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>284</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>284</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>284</c>
+                  <c>TRACTOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>284</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>284</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>288</c>
+                  <c>BUNDLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>288</c>
+                  <c>SERVICES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>288</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>288</c>
+                  <c>INSTALLATION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>288</c>
+                  <c>CHARGES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>289</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>289</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>289</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>289</c>
+                  <c>CRUISE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>289</c>
+                  <c>STATEROOM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>292</c>
+                  <c>MANY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>292</c>
+                  <c>THINGS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>292</c>
+                  <c>HOTELS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>292</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>292</c>
+                  <c>BILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>293</c>
+                  <c>CANNOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>293</c>
+                  <c>OUR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>293</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>293</c>
+                  <c>COMPANY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>293</c>
+                  <c>TIME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>293</c>
+                  <c>WARNER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>305</c>
+                  <c>BETTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>305</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>305</c>
+                  <c>RICHARDS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>305</c>
+                  <c>PERSON</c>
+                  <c />
+                </r>
+                <r>
+                  <c>307</c>
+                  <c>VEHICLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>307</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>309</c>
+                  <c>NONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>312</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>312</c>
+                  <c>CONSUMER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>312</c>
+                  <c>REPORTS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>312</c>
+                  <c>INSTRUCTIONS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>312</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>316</c>
+                  <c>MANY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>316</c>
+                  <c>RUMMAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>316</c>
+                  <c>SALE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>316</c>
+                  <c>ITEMS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>320</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>320</c>
+                  <c>VACATION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>320</c>
+                  <c>CARRIBEAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>321</c>
+                  <c>OUR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>321</c>
+                  <c>SUBSCRIPTION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>321</c>
+                  <c>NOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>321</c>
+                  <c>DUE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>321</c>
+                  <c>UNTIL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>321</c>
+                  <c>OCT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>321</c>
+                  <c>BUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>327</c>
+                  <c>ALWAYS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>327</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>331</c>
+                  <c>SICK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>331</c>
+                  <c>COMCAST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>331</c>
+                  <c>BILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>331</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>332</c>
+                  <c>SOFA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>332</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>332</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>335</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>335</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>335</c>
+                  <c>USING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>335</c>
+                  <c>YOUR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>335</c>
+                  <c>ESTABLISH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>335</c>
+                  <c>GOOD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>335</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>339</c>
+                  <c>ANTIQUE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>339</c>
+                  <c>STORE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>339</c>
+                  <c>CHINA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>339</c>
+                  <c>CABINET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>342</c>
+                  <c>UNPLEASANT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>342</c>
+                  <c>DISCUSSION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>342</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>342</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>342</c>
+                  <c>SERVI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>347</c>
+                  <c>VETERAN'S</c>
+                  <c />
+                </r>
+                <r>
+                  <c>347</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>347</c>
+                  <c>HOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>347</c>
+                  <c>DEPOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>347</c>
+                  <c>PRODUCT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>347</c>
+                  <c>THAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>370</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>370</c>
+                  <c>MOTORHOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>370</c>
+                  <c>ASKING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>379</c>
+                  <c>PURCHASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>379</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>379</c>
+                  <c>TOYOTA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>379</c>
+                  <c>CAMRY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>379</c>
+                  <c>LAST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>379</c>
+                  <c>SPRING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>380</c>
+                  <c>FURNITURE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>380</c>
+                  <c>LANDSCAPING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>382</c>
+                  <c>PURCHASIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>382</c>
+                  <c>ANTIQUES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>382</c>
+                  <c>ANTIQUE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>382</c>
+                  <c>SHOW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>387</c>
+                  <c>BARGAINED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>387</c>
+                  <c>SMOG</c>
+                  <c />
+                </r>
+                <r>
+                  <c>387</c>
+                  <c>CHECK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>387</c>
+                  <c>HONDACRV</c>
+                  <c />
+                </r>
+                <r>
+                  <c>389</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>389</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>389</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>389</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>389</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>389</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>391</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>391</c>
+                  <c>RECENT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>391</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>391</c>
+                  <c>QUOTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>391</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>400</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>400</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>400</c>
+                  <c>ADDITIONAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>400</c>
+                  <c>OFF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>400</c>
+                  <c>THEI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>403</c>
+                  <c>DISH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>405</c>
+                  <c>RECENTLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>405</c>
+                  <c>MOVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>405</c>
+                  <c>HAD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>405</c>
+                  <c>HAVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>405</c>
+                  <c>DISH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>405</c>
+                  <c>INSTALLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>405</c>
+                  <c>HERE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>409</c>
+                  <c>ALWAYS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>409</c>
+                  <c>LOOKING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>409</c>
+                  <c>BEST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>409</c>
+                  <c>DEAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>409</c>
+                  <c>GOOD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>409</c>
+                  <c>EQUI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>410</c>
+                  <c>BOUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>410</c>
+                  <c>IRON</c>
+                  <c />
+                </r>
+                <r>
+                  <c>410</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>415</c>
+                  <c>DONT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>419</c>
+                  <c>YOU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>419</c>
+                  <c>ASK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>419</c>
+                  <c>YOU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>419</c>
+                  <c>CAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>419</c>
+                  <c>USUALLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>419</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>420</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>420</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>420</c>
+                  <c>JOHN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>420</c>
+                  <c>DEERE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>420</c>
+                  <c>GATOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>420</c>
+                  <c>ACC</c>
+                  <c />
+                </r>
+                <r>
+                  <c>428</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>428</c>
+                  <c>OFFERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>428</c>
+                  <c>LESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>428</c>
+                  <c>THAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>428</c>
+                  <c>ASKING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>428</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>428</c>
+                  <c>BEDRO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>429</c>
+                  <c>BARGAINED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>429</c>
+                  <c>DOWN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>429</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>429</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>429</c>
+                  <c>BUNDLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>429</c>
+                  <c>CUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>436</c>
+                  <c>SET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>436</c>
+                  <c>FOUR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>436</c>
+                  <c>MICHELIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>436</c>
+                  <c>TIRES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>436</c>
+                  <c>VAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>436</c>
+                  <c>SAVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>437</c>
+                  <c>REFRIGERATORWASHER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>437</c>
+                  <c>DRYER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>437</c>
+                  <c>TABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>441</c>
+                  <c>BILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>441</c>
+                  <c>WHICH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>441</c>
+                  <c>FORGOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>441</c>
+                  <c>MAKE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>441</c>
+                  <c>PAYMENT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>442</c>
+                  <c>SET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>442</c>
+                  <c>TIRES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>442</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>442</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>443</c>
+                  <c>DETEST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>443</c>
+                  <c>PRACTICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>443</c>
+                  <c>WILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>443</c>
+                  <c>NOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>443</c>
+                  <c>ESTABL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>444</c>
+                  <c>TALKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>444</c>
+                  <c>HOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>444</c>
+                  <c>DEPOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>444</c>
+                  <c>INTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>444</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>447</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>447</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>447</c>
+                  <c>LUMBER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>447</c>
+                  <c>SUNDECK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>448</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>448</c>
+                  <c>DIRECT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>448</c>
+                  <c>PER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>448</c>
+                  <c>OFF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>449</c>
+                  <c>TIRES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>449</c>
+                  <c>GRANDSON'S</c>
+                  <c />
+                </r>
+                <r>
+                  <c>449</c>
+                  <c>BIKE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>449</c>
+                  <c>THEM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>449</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>456</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>456</c>
+                  <c>RATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>456</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>456</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>456</c>
+                  <c>TIME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>470</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>470</c>
+                  <c>TIME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>470</c>
+                  <c>WARNER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>470</c>
+                  <c>BUNDLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>479</c>
+                  <c>HAHA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>479</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>479</c>
+                  <c>JUST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>479</c>
+                  <c>ABOUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>479</c>
+                  <c>EVERY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>479</c>
+                  <c>MAJOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>479</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>481</c>
+                  <c>BACK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>481</c>
+                  <c>ISSUE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>481</c>
+                  <c>COMIC</c>
+                  <c />
+                </r>
+                <r>
+                  <c>481</c>
+                  <c>BOOKS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>482</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>482</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>482</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>486</c>
+                  <c>YES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>486</c>
+                  <c>BUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>486</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>486</c>
+                  <c>OVERSEAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>486</c>
+                  <c>WHERE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>486</c>
+                  <c>HAGGLING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>486</c>
+                  <c>EVERY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>488</c>
+                  <c>REFRIGERATOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>493</c>
+                  <c>BUNDLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>493</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>493</c>
+                  <c>SERVICES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>499</c>
+                  <c>LOWERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>499</c>
+                  <c>COST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>499</c>
+                  <c>COMCAST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>499</c>
+                  <c>AFTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>499</c>
+                  <c>READING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>499</c>
+                  <c>ARTICLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>503</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>503</c>
+                  <c>PROVIDER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>503</c>
+                  <c>AGREED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>503</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>503</c>
+                  <c>RATES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>503</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>503</c>
+                  <c>BETTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>505</c>
+                  <c>VARIETY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>505</c>
+                  <c>JOBS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>505</c>
+                  <c>STANDARD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>505</c>
+                  <c>METHODOLOGY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>507</c>
+                  <c>RADIO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>507</c>
+                  <c>MONTH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>513</c>
+                  <c>HEATING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>513</c>
+                  <c>OIL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>513</c>
+                  <c>PRICING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>513</c>
+                  <c>LONGTERM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>513</c>
+                  <c>SUPPLIER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>514</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>514</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>514</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>514</c>
+                  <c>WHAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>514</c>
+                  <c>WANTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>515</c>
+                  <c>TRADE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>518</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>518</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>519</c>
+                  <c>BUNDLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>519</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>519</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>519</c>
+                  <c>SAVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>519</c>
+                  <c>MONTH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>520</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>520</c>
+                  <c>TRIPLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>520</c>
+                  <c>PLAY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>520</c>
+                  <c>BUNDLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>520</c>
+                  <c>VERIZON</c>
+                  <c />
+                </r>
+                <r>
+                  <c>525</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>525</c>
+                  <c>UPCHARGED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>525</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>525</c>
+                  <c>BILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>525</c>
+                  <c>GOING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>525</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>533</c>
+                  <c>SUV</c>
+                  <c />
+                </r>
+                <r>
+                  <c>533</c>
+                  <c>NOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>533</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>537</c>
+                  <c>SMALL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>537</c>
+                  <c>STUFF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>538</c>
+                  <c>SOMETIMES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>538</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>538</c>
+                  <c>MOST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>538</c>
+                  <c>TIMES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>538</c>
+                  <c>NOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>541</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>541</c>
+                  <c>CHINA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>541</c>
+                  <c>ASIA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>541</c>
+                  <c>BARGAINED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>541</c>
+                  <c>LEFT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>541</c>
+                  <c>RIG</c>
+                  <c />
+                </r>
+                <r>
+                  <c>546</c>
+                  <c>ALWAYS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>546</c>
+                  <c>ASK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>546</c>
+                  <c>DISCOUNTS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>546</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>546</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>546</c>
+                  <c>MATERIA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>547</c>
+                  <c>MANY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>547</c>
+                  <c>ITEMS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>547</c>
+                  <c>OUTCOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>547</c>
+                  <c>GOOD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>560</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>560</c>
+                  <c>CARVERY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>560</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>569</c>
+                  <c>LOVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>569</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>569</c>
+                  <c>EVEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>569</c>
+                  <c>MORE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>569</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>569</c>
+                  <c>HOU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>573</c>
+                  <c>LOVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>573</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>573</c>
+                  <c>HOUSE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>573</c>
+                  <c>BUILD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>573</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>579</c>
+                  <c>MOTELS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>579</c>
+                  <c>BICYCLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>579</c>
+                  <c>PARTS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>579</c>
+                  <c>LUCK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>582</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>582</c>
+                  <c>MOTEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>582</c>
+                  <c>ROOM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>584</c>
+                  <c>LOVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>584</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>584</c>
+                  <c>HOUSE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>584</c>
+                  <c>BUILDING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>584</c>
+                  <c>ALWA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>598</c>
+                  <c>REQUESTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>598</c>
+                  <c>COPETITORS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>598</c>
+                  <c>ADVERTISED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>598</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>602</c>
+                  <c>MEDICAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>602</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>621</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>621</c>
+                  <c>AIR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>621</c>
+                  <c>CONDITIONER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>621</c>
+                  <c>CONDENSOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>621</c>
+                  <c>FURNACE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>622</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>622</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>622</c>
+                  <c>VEHICLEAND</c>
+                  <c />
+                </r>
+                <r>
+                  <c>622</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>622</c>
+                  <c>QUOTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>622</c>
+                  <c>LOWE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>626</c>
+                  <c>GARAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>626</c>
+                  <c>SALES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>626</c>
+                  <c>OUTCOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>626</c>
+                  <c>USUALLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>626</c>
+                  <c>FAVORABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>627</c>
+                  <c>SUCCESSFULLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>627</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>627</c>
+                  <c>HOTEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>627</c>
+                  <c>CHARGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>631</c>
+                  <c>LANDSCAPE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>631</c>
+                  <c>WORK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>631</c>
+                  <c>TALKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>631</c>
+                  <c>CONTRACTOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>631</c>
+                  <c>INTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>631</c>
+                  <c>GIVING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>640</c>
+                  <c>FREE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>640</c>
+                  <c>BREAKFAST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>640</c>
+                  <c>HOTELS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>640</c>
+                  <c>FREE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>640</c>
+                  <c>LATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>640</c>
+                  <c>CHECKOUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>642</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>642</c>
+                  <c>VEHICLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>642</c>
+                  <c>TRADE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>642</c>
+                  <c>VALUE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>642</c>
+                  <c>CURRE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>648</c>
+                  <c>FREE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>648</c>
+                  <c>SAMPLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>648</c>
+                  <c>BRICK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>648</c>
+                  <c>TODAY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>648</c>
+                  <c>AMHERST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>648</c>
+                  <c>FARMER'S</c>
+                  <c />
+                </r>
+                <r>
+                  <c>650</c>
+                  <c>LOWE'S</c>
+                  <c />
+                </r>
+                <r>
+                  <c>650</c>
+                  <c>HOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>650</c>
+                  <c>DEPOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>650</c>
+                  <c>WERE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>650</c>
+                  <c>SELLING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>650</c>
+                  <c>SAME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>650</c>
+                  <c>FRONT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>655</c>
+                  <c>CALLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>655</c>
+                  <c>COMCAST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>655</c>
+                  <c>HAD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>655</c>
+                  <c>BILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>655</c>
+                  <c>LOWERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>655</c>
+                  <c>SAME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>655</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>663</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>663</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>665</c>
+                  <c>ALWAYS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>665</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>665</c>
+                  <c>MAGAZINE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>665</c>
+                  <c>SUBSCRIPTIONS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>665</c>
+                  <c>ALWA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>666</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>666</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>666</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>666</c>
+                  <c>DOWN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>669</c>
+                  <c>COPY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>669</c>
+                  <c>MACHINE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>669</c>
+                  <c>PURCHASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>669</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>669</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>673</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>673</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>673</c>
+                  <c>SKI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>673</c>
+                  <c>EQUIPMENT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>673</c>
+                  <c>RETAILER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>673</c>
+                  <c>LOW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>688</c>
+                  <c>ANTIQUE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>688</c>
+                  <c>STORES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>688</c>
+                  <c>YARD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>688</c>
+                  <c>SALES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>688</c>
+                  <c>ALWAYS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>688</c>
+                  <c>BETTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>690</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>690</c>
+                  <c>WIFES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>690</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>690</c>
+                  <c>TOYOTA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>690</c>
+                  <c>RECEIVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>690</c>
+                  <c>DEAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>690</c>
+                  <c>WANTE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>691</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>691</c>
+                  <c>FINANCE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>691</c>
+                  <c>RENEWAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>691</c>
+                  <c>POSITIVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>691</c>
+                  <c>OUTCOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>694</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>694</c>
+                  <c>LAWN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>694</c>
+                  <c>TRACTOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>696</c>
+                  <c>DIRECTV</c>
+                  <c />
+                </r>
+                <r>
+                  <c>696</c>
+                  <c>THEY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>696</c>
+                  <c>RAISED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>696</c>
+                  <c>RATES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>696</c>
+                  <c>TOLD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>696</c>
+                  <c>THEM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>696</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>697</c>
+                  <c>BOUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>697</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>697</c>
+                  <c>TRUCK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>697</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>697</c>
+                  <c>ABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>697</c>
+                  <c>ABOUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>697</c>
+                  <c>MORE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>700</c>
+                  <c>BROUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>700</c>
+                  <c>DOWN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>700</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>700</c>
+                  <c>LAWN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>700</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>700</c>
+                  <c>PER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>701</c>
+                  <c>CHAINSAW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>701</c>
+                  <c>CREDIT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>701</c>
+                  <c>REPAIRS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>701</c>
+                  <c>OLDER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>701</c>
+                  <c>SAW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>701</c>
+                  <c>TOWA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>703</c>
+                  <c>SOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>703</c>
+                  <c>SLIGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>703</c>
+                  <c>DAMAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>703</c>
+                  <c>TRAILER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>703</c>
+                  <c>JUST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>703</c>
+                  <c>BOUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>708</c>
+                  <c>UPGRADES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>708</c>
+                  <c>TRAVEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>710</c>
+                  <c>IT'S</c>
+                  <c />
+                </r>
+                <r>
+                  <c>710</c>
+                  <c>PAINFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>710</c>
+                  <c>HATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>710</c>
+                  <c>HAGGLING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>710</c>
+                  <c>BUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>710</c>
+                  <c>SOMETIMES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>710</c>
+                  <c>ITS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>712</c>
+                  <c>STREET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>712</c>
+                  <c>FAIR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>712</c>
+                  <c>BOOTH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>712</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>713</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>713</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>713</c>
+                  <c>DEALER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>713</c>
+                  <c>REFUSED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>713</c>
+                  <c>LESSER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>713</c>
+                  <c>OFFER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>713</c>
+                  <c>THAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>713</c>
+                  <c>AMOUN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>716</c>
+                  <c>TYPICAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>716</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>716</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>716</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>716</c>
+                  <c>HAD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>716</c>
+                  <c>GONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>716</c>
+                  <c>EDMUNDS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>734</c>
+                  <c>LANDSCAPING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>734</c>
+                  <c>WORK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>734</c>
+                  <c>SEWING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>734</c>
+                  <c>MACHINE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>734</c>
+                  <c>SEARS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>736</c>
+                  <c>HUSBAND</c>
+                  <c />
+                </r>
+                <r>
+                  <c>736</c>
+                  <c>BARGAINS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>736</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>736</c>
+                  <c>SHOP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>736</c>
+                  <c>LARGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>736</c>
+                  <c>TICKETI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>741</c>
+                  <c>EXTRA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>741</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>741</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>747</c>
+                  <c>HAD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>747</c>
+                  <c>LATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>747</c>
+                  <c>CHARGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>747</c>
+                  <c>REMOVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>747</c>
+                  <c>CREDIT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>747</c>
+                  <c>CARD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>753</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>753</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>753</c>
+                  <c>GIFT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>753</c>
+                  <c>ITEMS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>753</c>
+                  <c>OTHER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>753</c>
+                  <c>COUNTRIES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>753</c>
+                  <c>SUCH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>775</c>
+                  <c>INTEREST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>775</c>
+                  <c>CARDS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>777</c>
+                  <c>GOING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>777</c>
+                  <c>GATOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>777</c>
+                  <c>HUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>777</c>
+                  <c>COUSINS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>779</c>
+                  <c>CARS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>783</c>
+                  <c>JUST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>783</c>
+                  <c>BOUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>783</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>783</c>
+                  <c>PRIUS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>783</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>783</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>784</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>784</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>784</c>
+                  <c>COST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>784</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>784</c>
+                  <c>ROOF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>784</c>
+                  <c>COMPAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>791</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>791</c>
+                  <c>ABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>791</c>
+                  <c>GREAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>791</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>791</c>
+                  <c>BLU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>791</c>
+                  <c>RAY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>791</c>
+                  <c>PLAYER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>791</c>
+                  <c>CAUS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>797</c>
+                  <c>HOTEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>797</c>
+                  <c>ROOM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>797</c>
+                  <c>HOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>797</c>
+                  <c>REMODEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>797</c>
+                  <c>SATALITE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>797</c>
+                  <c>RADION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>797</c>
+                  <c>MONTHLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>804</c>
+                  <c>DIRECT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>804</c>
+                  <c>ASKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>804</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>804</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>804</c>
+                  <c>QWEST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>804</c>
+                  <c>BUNDLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>816</c>
+                  <c>REFRIGERATOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>816</c>
+                  <c>SLIGHTLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>816</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>816</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>816</c>
+                  <c>FRE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>817</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>817</c>
+                  <c>PURCHASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>817</c>
+                  <c>WHIRLPOOL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>817</c>
+                  <c>WASHER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>817</c>
+                  <c>LAST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>817</c>
+                  <c>MONTH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>821</c>
+                  <c>OFF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>821</c>
+                  <c>MATTRESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>821</c>
+                  <c>ALREADY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>821</c>
+                  <c>SALE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>846</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>846</c>
+                  <c>ABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>846</c>
+                  <c>ADDITIONAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>846</c>
+                  <c>OFF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>846</c>
+                  <c>PAIR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>846</c>
+                  <c>CLEARA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>852</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>853</c>
+                  <c>SATELLITE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>853</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>853</c>
+                  <c>RECEIVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>853</c>
+                  <c>MATCHING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>853</c>
+                  <c>OFFER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>859</c>
+                  <c>WORKS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>859</c>
+                  <c>HAGGLEIF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>859</c>
+                  <c>YOU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>859</c>
+                  <c>DON'T</c>
+                  <c />
+                </r>
+                <r>
+                  <c>859</c>
+                  <c>YOU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>859</c>
+                  <c>WILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>859</c>
+                  <c>OVERPAY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>864</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>864</c>
+                  <c>TELEPHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>864</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>864</c>
+                  <c>COST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>869</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>869</c>
+                  <c>PACKAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>869</c>
+                  <c>LOWERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>869</c>
+                  <c>BILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>869</c>
+                  <c>SOMEWHAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>874</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>874</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>874</c>
+                  <c>STILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>874</c>
+                  <c>DECIDING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>874</c>
+                  <c>WHICH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>874</c>
+                  <c>VEHICLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>876</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>876</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>877</c>
+                  <c>SALE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>877</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>877</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>877</c>
+                  <c>FRIDGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>877</c>
+                  <c>PURCHASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>877</c>
+                  <c>UPGRA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>891</c>
+                  <c>PICKUP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>891</c>
+                  <c>TRUCK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>891</c>
+                  <c>DID</c>
+                  <c />
+                </r>
+                <r>
+                  <c>891</c>
+                  <c>EVERYTHING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>891</c>
+                  <c>THRU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>891</c>
+                  <c>EMAIL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>891</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>898</c>
+                  <c>HAVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>898</c>
+                  <c>NOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>898</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>898</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>898</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>898</c>
+                  <c>ANYTHING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>898</c>
+                  <c>BUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>915</c>
+                  <c>HAGGLING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>926</c>
+                  <c>CALLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>926</c>
+                  <c>TIME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>926</c>
+                  <c>WARNER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>926</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>926</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>926</c>
+                  <c>RATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>926</c>
+                  <c>WENT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>928</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>928</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>928</c>
+                  <c>WON</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>WIFES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>SUV</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>DID</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>NOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>REALLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>ANY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>MORE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>THAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>936</c>
+                  <c>WHAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>939</c>
+                  <c>PLANTS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>939</c>
+                  <c>FLOWERSFOOD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>939</c>
+                  <c>FARMS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>939</c>
+                  <c>MARKET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>947</c>
+                  <c>OPEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>947</c>
+                  <c>MARKET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>947</c>
+                  <c>ITALY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>947</c>
+                  <c>BARGAINED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>947</c>
+                  <c>MER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>957</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>957</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>957</c>
+                  <c>CAME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>957</c>
+                  <c>MIDDLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>957</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>963</c>
+                  <c>HOTEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>963</c>
+                  <c>ROOM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>963</c>
+                  <c>RATES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>963</c>
+                  <c>CONSTANTLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>963</c>
+                  <c>GENERALLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>965</c>
+                  <c>HAVEN'T</c>
+                  <c />
+                </r>
+                <r>
+                  <c>965</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>965</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>965</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>965</c>
+                  <c>ITEMS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>965</c>
+                  <c>WHICH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>965</c>
+                  <c>YOUR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>965</c>
+                  <c>MAGAZI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>969</c>
+                  <c>AUTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>969</c>
+                  <c>PURCHASESATISFIED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>970</c>
+                  <c>BETTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>970</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>980</c>
+                  <c>CAMERA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>980</c>
+                  <c>AMAZON</c>
+                  <c />
+                </r>
+                <r>
+                  <c>980</c>
+                  <c>VENDOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>980</c>
+                  <c>REDUCTION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>985</c>
+                  <c>ALWAYS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>985</c>
+                  <c>ASK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>985</c>
+                  <c>ABOUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>985</c>
+                  <c>SPECIALS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>985</c>
+                  <c>COMPLAIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>985</c>
+                  <c>THIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>986</c>
+                  <c>HOUSE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>986</c>
+                  <c>REDUCTION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>988</c>
+                  <c>THERE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>988</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>988</c>
+                  <c>IRREGULARITY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>988</c>
+                  <c>ITEM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>988</c>
+                  <c>THAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>991</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>991</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>996</c>
+                  <c>BEST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>996</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>996</c>
+                  <c>BETWEEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>996</c>
+                  <c>STORES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>996</c>
+                  <c>VACUUM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>996</c>
+                  <c>FRUSTRATED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>998</c>
+                  <c>SIRIUS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>998</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>998</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1004</c>
+                  <c>TOP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1004</c>
+                  <c>SOIL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1004</c>
+                  <c>HALF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1004</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1004</c>
+                  <c>SUCCESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1004</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1004</c>
+                  <c>BAGS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1004</c>
+                  <c>HAD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1006</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1006</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1006</c>
+                  <c>TRUCK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1007</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1007</c>
+                  <c>CHECKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1007</c>
+                  <c>TOLD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1007</c>
+                  <c>THEM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1007</c>
+                  <c>EITHER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1007</c>
+                  <c>BEAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1007</c>
+                  <c>YOU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1015</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1015</c>
+                  <c>LEASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1042</c>
+                  <c>TAXI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1042</c>
+                  <c>RIDE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1042</c>
+                  <c>LOWERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1042</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1042</c>
+                  <c>DOLLARS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1043</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1043</c>
+                  <c>TRUCKI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1043</c>
+                  <c>ENDED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1043</c>
+                  <c>GOOD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1043</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1044</c>
+                  <c>AUTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1044</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1047</c>
+                  <c>ASKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1047</c>
+                  <c>DISCOUNTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1047</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1047</c>
+                  <c>RESTAURANT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1047</c>
+                  <c>SUCCESSF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1048</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1048</c>
+                  <c>REF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1048</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1048</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1053</c>
+                  <c>BUNDLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1053</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1053</c>
+                  <c>INTERNETIT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1053</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1053</c>
+                  <c>REAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1053</c>
+                  <c>BATT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1055</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1055</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1060</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1060</c>
+                  <c>RANGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1060</c>
+                  <c>MICROWAVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1060</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1060</c>
+                  <c>PURCHASING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1060</c>
+                  <c>TWO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1060</c>
+                  <c>ITE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1062</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1062</c>
+                  <c>SUV</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1062</c>
+                  <c>EXPERIANCE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1062</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1062</c>
+                  <c>GOOD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1067</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1067</c>
+                  <c>WANTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1067</c>
+                  <c>CAUSE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1067</c>
+                  <c>OTHERWISE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1067</c>
+                  <c>WOUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1069</c>
+                  <c>FREEZER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1069</c>
+                  <c>DIED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1069</c>
+                  <c>LESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1069</c>
+                  <c>THAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1069</c>
+                  <c>YEARS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1069</c>
+                  <c>OWNERSHIP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1073</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1073</c>
+                  <c>CHEAPER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1073</c>
+                  <c>THAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1073</c>
+                  <c>ASKING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1073</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1073</c>
+                  <c>PLUS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1078</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1078</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1078</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1079</c>
+                  <c>SUCCESSFULLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1079</c>
+                  <c>NEGOTIATED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1079</c>
+                  <c>FREE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1079</c>
+                  <c>WINDOW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1079</c>
+                  <c>TINTING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1082</c>
+                  <c>HOTEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1082</c>
+                  <c>ROOM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1082</c>
+                  <c>RATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1082</c>
+                  <c>PACKAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1082</c>
+                  <c>VERY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1082</c>
+                  <c>SUCCESSFUL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1082</c>
+                  <c>SAVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1084</c>
+                  <c>GREAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1101</c>
+                  <c>VHS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1101</c>
+                  <c>DVD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1101</c>
+                  <c>PLAYER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1101</c>
+                  <c>VACUUM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1101</c>
+                  <c>CLEANER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1101</c>
+                  <c>BAGS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1101</c>
+                  <c>LAWN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1101</c>
+                  <c>FERTI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1116</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1116</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1116</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1116</c>
+                  <c>MSRP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1116</c>
+                  <c>PAID</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1119</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1119</c>
+                  <c>RATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1119</c>
+                  <c>RENTAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1119</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1119</c>
+                  <c>BECAUSE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1119</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1119</c>
+                  <c>EXPER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1121</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1121</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1121</c>
+                  <c>LOWERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1121</c>
+                  <c>MONTH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1130</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1130</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1130</c>
+                  <c>TRADE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1154</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1154</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1154</c>
+                  <c>ABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1154</c>
+                  <c>REACH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1154</c>
+                  <c>COMPROMISE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1155</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1155</c>
+                  <c>HOME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1155</c>
+                  <c>IMPROVEMENT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1155</c>
+                  <c>CONTRACTORS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1156</c>
+                  <c>ESQIIURE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1156</c>
+                  <c>MAG</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1158</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1158</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1158</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1158</c>
+                  <c>QUOTES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1158</c>
+                  <c>DIFFERENT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1158</c>
+                  <c>DEALE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1161</c>
+                  <c>ASK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1161</c>
+                  <c>DISCOUNTS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1161</c>
+                  <c>COUPONS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1161</c>
+                  <c>UPCOMING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1161</c>
+                  <c>SALES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1171</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1171</c>
+                  <c>BUILT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1171</c>
+                  <c>TRAILER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1171</c>
+                  <c>HITCH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1171</c>
+                  <c>BASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1173</c>
+                  <c>WAHER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1173</c>
+                  <c>DRYER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1173</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1173</c>
+                  <c>LOWES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1173</c>
+                  <c>EXTRA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1175</c>
+                  <c>ARGUED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1175</c>
+                  <c>BASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1175</c>
+                  <c>PRICES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1175</c>
+                  <c>FOUND</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1175</c>
+                  <c>WEB</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1175</c>
+                  <c>USUAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1178</c>
+                  <c>LOCAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1178</c>
+                  <c>AUTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1178</c>
+                  <c>REPAIR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1178</c>
+                  <c>SHOP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1178</c>
+                  <c>ALLOWED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1178</c>
+                  <c>SUPPLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1178</c>
+                  <c>OWN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1186</c>
+                  <c>CALLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1186</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1186</c>
+                  <c>COMPANY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1186</c>
+                  <c>BUNDLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1186</c>
+                  <c>SERVICESSAID</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1189</c>
+                  <c>CALLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1189</c>
+                  <c>MOTEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1189</c>
+                  <c>DIRECTLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1189</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1189</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1193</c>
+                  <c>OPTIMUM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1193</c>
+                  <c>LOWERED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1193</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1193</c>
+                  <c>FIRST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1193</c>
+                  <c>TIME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1193</c>
+                  <c>CALLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1193</c>
+                  <c>WOULD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1194</c>
+                  <c>YARD</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1194</c>
+                  <c>SALESPICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1194</c>
+                  <c>RACK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1209</c>
+                  <c>MANY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1209</c>
+                  <c>TIMES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1209</c>
+                  <c>ASK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1209</c>
+                  <c>BEST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1209</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1209</c>
+                  <c>PERHAPS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1212</c>
+                  <c>CHIROPRACTIC</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1212</c>
+                  <c>CARE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1212</c>
+                  <c>RECEIVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1212</c>
+                  <c>BETTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1212</c>
+                  <c>PRICING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1213</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1213</c>
+                  <c>DEARLER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1213</c>
+                  <c>SWAP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1213</c>
+                  <c>MEETS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1213</c>
+                  <c>YARDSALES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1213</c>
+                  <c>ITS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1213</c>
+                  <c>NOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1218</c>
+                  <c>APPLIANCES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1218</c>
+                  <c>HOUSE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1218</c>
+                  <c>SALE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1220</c>
+                  <c>PURCHASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1220</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1220</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1220</c>
+                  <c>LOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1220</c>
+                  <c>LESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1220</c>
+                  <c>THAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1220</c>
+                  <c>MSRP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1228</c>
+                  <c>NOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1228</c>
+                  <c>WELL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1232</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1232</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1232</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1240</c>
+                  <c>MATTRESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1240</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1240</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1244</c>
+                  <c>CABLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1244</c>
+                  <c>INTERNET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1244</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1245</c>
+                  <c>ALWAYS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1245</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1245</c>
+                  <c>BARGAIN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1245</c>
+                  <c>TRADE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1245</c>
+                  <c>NEARLY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1245</c>
+                  <c>EVERY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1251</c>
+                  <c>AUTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1251</c>
+                  <c>GAVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1251</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1251</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1251</c>
+                  <c>ACCEPTED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1251</c>
+                  <c>TRUCK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1251</c>
+                  <c>DITTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1255</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1255</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1255</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1255</c>
+                  <c>MUCH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1255</c>
+                  <c>BETTER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1255</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1255</c>
+                  <c>BUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1259</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1259</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1259</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1259</c>
+                  <c>SAVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1270</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1270</c>
+                  <c>OVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1270</c>
+                  <c>PRICES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1270</c>
+                  <c>TREE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1270</c>
+                  <c>SURGEONS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1270</c>
+                  <c>OBTAINED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1272</c>
+                  <c>ASKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1272</c>
+                  <c>REFUND</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1272</c>
+                  <c>COMPLAINED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1272</c>
+                  <c>ABOUT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1272</c>
+                  <c>LACK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1279</c>
+                  <c>THANK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1279</c>
+                  <c>YOU</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1316</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1316</c>
+                  <c>CONSUMER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1316</c>
+                  <c>REPORTS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1316</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1316</c>
+                  <c>PURCHASING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1316</c>
+                  <c>PURC</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1318</c>
+                  <c>ATT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1318</c>
+                  <c>GIVING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1318</c>
+                  <c>LIMITED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1318</c>
+                  <c>TIME</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1318</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1318</c>
+                  <c>RATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1342</c>
+                  <c>RAVNOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1342</c>
+                  <c>PLEASANT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1342</c>
+                  <c>EXPERIENCE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1342</c>
+                  <c>STILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1342</c>
+                  <c>FEEL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1346</c>
+                  <c>LEASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1346</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1346</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1346</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1346</c>
+                  <c>LEASED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1346</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1346</c>
+                  <c>BUICK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1346</c>
+                  <c>ENCLAVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1349</c>
+                  <c>HAGGLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1349</c>
+                  <c>AUTO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1349</c>
+                  <c>SALESMAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1349</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1349</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1354</c>
+                  <c>GOLF</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1354</c>
+                  <c>CLUBS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1361</c>
+                  <c>FURNITURETVDRY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1361</c>
+                  <c>CLEANINGCAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1361</c>
+                  <c>DAMAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1361</c>
+                  <c>ALL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1361</c>
+                  <c>HAGG</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1362</c>
+                  <c>CABLEVISION</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1362</c>
+                  <c>LOVER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1362</c>
+                  <c>BUNDLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1362</c>
+                  <c>PACKAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1362</c>
+                  <c>THREATEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1363</c>
+                  <c>HUSBAND</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1363</c>
+                  <c>NEGOTIATED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1363</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1363</c>
+                  <c>PURCHASE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1363</c>
+                  <c>MAJOR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1364</c>
+                  <c>COMPLAINED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1364</c>
+                  <c>DIRECT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1364</c>
+                  <c>THAT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1364</c>
+                  <c>HAVE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1364</c>
+                  <c>SUBSCRIBED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1366</c>
+                  <c>CARBOUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1372</c>
+                  <c>BOUGHT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1372</c>
+                  <c>NISSAN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1372</c>
+                  <c>LEAFIT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1372</c>
+                  <c>WAS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1372</c>
+                  <c>LIKE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1372</c>
+                  <c>TAKE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1372</c>
+                  <c>LEAVEI</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1382</c>
+                  <c>CALLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1382</c>
+                  <c>ALL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1382</c>
+                  <c>ACURA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1382</c>
+                  <c>DEALERSHIPS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1382</c>
+                  <c>DFW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1382</c>
+                  <c>AREA</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1392</c>
+                  <c>WHEN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1392</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1392</c>
+                  <c>MATRESS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1392</c>
+                  <c>GUEST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1392</c>
+                  <c>ROM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1392</c>
+                  <c>DECIDED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1401</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1401</c>
+                  <c>BUNDLED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1401</c>
+                  <c>PHONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1408</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1408</c>
+                  <c>NEWSPAPER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1408</c>
+                  <c>RENEWAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1408</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1408</c>
+                  <c>ATT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1409</c>
+                  <c>HAGGLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1409</c>
+                  <c>ALMOST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1409</c>
+                  <c>EVERYTHING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1409</c>
+                  <c>BUY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1409</c>
+                  <c>PERSON</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1409</c>
+                  <c>OTHE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1417</c>
+                  <c>USED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1417</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1417</c>
+                  <c>RECEIVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1417</c>
+                  <c>MUCH</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1417</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1417</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1418</c>
+                  <c>WON</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1423</c>
+                  <c>WORK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1423</c>
+                  <c>WERE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1423</c>
+                  <c>ORDERING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1423</c>
+                  <c>STREET</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1423</c>
+                  <c>SIGN</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1423</c>
+                  <c>OUR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1428</c>
+                  <c>BEDROOM</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1428</c>
+                  <c>FURNITURE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1428</c>
+                  <c>RECEIVED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1428</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1428</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1437</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1437</c>
+                  <c>CARUSED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1437</c>
+                  <c>CONSUMER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1437</c>
+                  <c>REPORT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1437</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1437</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1437</c>
+                  <c>SERVICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1452</c>
+                  <c>NEGOIATED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1452</c>
+                  <c>SUBSTANTIAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1452</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1452</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1452</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1452</c>
+                  <c>WALKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1455</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1455</c>
+                  <c>RATE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1455</c>
+                  <c>COMCAST</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1455</c>
+                  <c>BUNDLE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1455</c>
+                  <c>PACKAGE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1457</c>
+                  <c>ASKED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1457</c>
+                  <c>ACCESSORIES</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1457</c>
+                  <c>LOWER</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1457</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1457</c>
+                  <c>FREE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1459</c>
+                  <c>BUYING</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1459</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1459</c>
+                  <c>CARGOT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1459</c>
+                  <c>PRICE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1459</c>
+                  <c>REDUCED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1459</c>
+                  <c>BIT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1461</c>
+                  <c>NEEDED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1461</c>
+                  <c>MECHANICAL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1461</c>
+                  <c>WORK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1461</c>
+                  <c>DONE</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1461</c>
+                  <c>CAR</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1461</c>
+                  <c>ALSO</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1461</c>
+                  <c>NEEDED</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1482</c>
+                  <c>NEW</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1482</c>
+                  <c>PICKUP</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1482</c>
+                  <c>DID</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1482</c>
+                  <c>PRETTY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1482</c>
+                  <c>WILL</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1490</c>
+                  <c>ALWAYS</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1490</c>
+                  <c>ASK</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1490</c>
+                  <c>MILITARY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1490</c>
+                  <c>DISCOUNT</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1490</c>
+                  <c>THEY</c>
+                  <c />
+                </r>
+                <r>
+                  <c>1490</c>
+                  <c>DON</c>
+                  <c />
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field name="Response" size="18" source="TextInput:" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="474" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11004_10226a5ffb124212853f2e4a0c192385_\Engine_7400_05e29abb63774831b079b793b90e5544_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Response" selected="False" />
+            <SelectField field="Flag" selected="False" />
+            <SelectField field="ID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="Formula: if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif" name="Tuple" size="1000" source="Formula: if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="414" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ID] = 1</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ID] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field name="Response" size="18" source="TextInput:" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Bool" />
+            <Field description="Formula: if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif" name="ID" source="Formula: if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif" type="Int32" />
+            <Field description="Formula: if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif" name="Tuple" size="1000" source="Formula: if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field name="Response" size="18" source="TextInput:" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Bool" />
+            <Field description="Formula: if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif" name="ID" source="Formula: if [Row-1:GROUP ID]!=[GROUP ID] then 1 else [Row-1:ID]+1 endif" type="Int32" />
+            <Field description="Formula: if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif" name="Tuple" size="1000" source="Formula: if [GROUP ID]!=[Row-1:GROUP ID] then [Response] else [Row-1:Tuple]+' '+[Response] endif" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="522" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="False" />
+            <SelectField field="Tuple" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field name="Response" size="18" source="TextInput:" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="618" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output10</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="462" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Tuples</Name>
+          <Abbrev>T</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="6" y="318" width="156" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Data coming in through a Macro Input.
+
+You will assign this Input as the Iterative Input through the Iterative Designer (accessible via the View drop down menu).
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="198" y="378" width="396" height="312" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+•	In the macro, create a record id for each word in a group – 1,2,3, etc.
+•	In a multi-row formula build a formula to build tuples off of the first word in a group – for example:
+
+Group	Word	Word Sequence	Tuple
+a	Alteryx	1	Alteryx
+a	is	2	Alteryx is
+a	great	3	Alteryx is great
+
+•	Remove All words where the word sequence = 1 and send the rest of the words back through the process. This way the next time through you build tuples starting at the word Is. 
+
+You’ll run the iteration until there are no more words left.
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="570" y="150" width="156" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Assign Output 10 to replenish the Macro Input.
+
+The Macro stops processing once all combinations are evaluated. ]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="False" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>tupleiterative</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (9)</Name>
+          <ToolId value="9" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (10)</Description>
+              <Name>Macro Output (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (11)</Description>
+              <Name>Macro Input (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (12)</Description>
+              <Name>Macro Output (12)</Name>
+              <ToolId value="12" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input11</Input>
+        <Output>Output10</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="4" Selected="False" />
+        <Tool ToolId="11" Selected="True" />
+        <Tool ToolId="5" Selected="False" />
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="12" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

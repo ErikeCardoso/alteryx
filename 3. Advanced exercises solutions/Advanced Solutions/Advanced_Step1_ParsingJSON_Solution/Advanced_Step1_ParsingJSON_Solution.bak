@@ -1,0 +1,1258 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="566" y="266" width="192" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>What the results should look like:</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="86" y="266" width="192" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>URL to access Quandl API</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="86" y="54" width="688" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Quandl is a search engine for numerical data. The site offers access to several million financial, economic and social datasets. Quandl indexes data from multiple sources allowing users to find and download in various formats. All Quandl's data are accessible via an API.
+
+We have had several customers express interest in using Qandl’s APIs. The response from these APIs is JSON. 
+
+For this exercise, a user is trying to get aggregated Annual Crime Statistics for the US dating back to 1960. The Text Input contains the URL for the API request. Your goal is to parse the response.
+
+A hint:
+
+After parsing the JSON, you will need to further identify the patterns within the data to effectively stage into a table for analytics.
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="150" y="314" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>http://www.quandl.com/api/v1/datasets/DISASTERCENTER/RATES.json?&amp;trim_start=1960-12-31&amp;trim_end=2012-12-31&amp;sort_order=desc</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="598" y="314" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="54" />
+          <Fields>
+            <Field name="Date" />
+            <Field name="Total" />
+            <Field name="Violent" />
+            <Field name="Property" />
+            <Field name="Murder" />
+            <Field name="Forcible Rape" />
+            <Field name="Robbery" />
+            <Field name="Aggr Assault" />
+            <Field name="Burglary" />
+            <Field name="Larceny Theft" />
+            <Field name="Vehicle Theft" />
+          </Fields>
+          <Data>
+            <r>
+              <c>2012-12-31</c>
+              <c>3246.1</c>
+              <c>386.9</c>
+              <c>2859.2</c>
+              <c>4.7</c>
+              <c>26.9</c>
+              <c>112.9</c>
+              <c>242.3</c>
+              <c>670.2</c>
+              <c>1959.3</c>
+              <c>229.7</c>
+            </r>
+            <r>
+              <c>2011-12-31</c>
+              <c>3292.5</c>
+              <c>387.1</c>
+              <c>2905.4</c>
+              <c>4.7</c>
+              <c>27</c>
+              <c>113.9</c>
+              <c>241.5</c>
+              <c>701.3</c>
+              <c>1974.1</c>
+              <c>230</c>
+            </r>
+            <r>
+              <c>2010-12-31</c>
+              <c>3350.4</c>
+              <c>404.5</c>
+              <c>2945.9</c>
+              <c>4.8</c>
+              <c>27.7</c>
+              <c>119.3</c>
+              <c>252.8</c>
+              <c>701</c>
+              <c>2005.8</c>
+              <c>239.1</c>
+            </r>
+            <r>
+              <c>2009-12-31</c>
+              <c>3465.5</c>
+              <c>431.9</c>
+              <c>3036.1</c>
+              <c>5</c>
+              <c>29.1</c>
+              <c>133.1</c>
+              <c>264.7</c>
+              <c>717.7</c>
+              <c>2064.5</c>
+              <c>259.2</c>
+            </r>
+            <r>
+              <c>2008-12-31</c>
+              <c>3669</c>
+              <c>457.5</c>
+              <c>3211.5</c>
+              <c>5.4</c>
+              <c>29.7</c>
+              <c>145.7</c>
+              <c>276.7</c>
+              <c>732.1</c>
+              <c>2167</c>
+              <c>314.7</c>
+            </r>
+            <r>
+              <c>2007-12-31</c>
+              <c>3730.4</c>
+              <c>466.9</c>
+              <c>3263.5</c>
+              <c>5.6</c>
+              <c>30</c>
+              <c>147.6</c>
+              <c>283.8</c>
+              <c>722.5</c>
+              <c>2177.8</c>
+              <c>363.3</c>
+            </r>
+            <r>
+              <c>2006-12-31</c>
+              <c>3808.1</c>
+              <c>473.6</c>
+              <c>3334.5</c>
+              <c>5.7</c>
+              <c>30.9</c>
+              <c>149.4</c>
+              <c>287.5</c>
+              <c>729.4</c>
+              <c>2206.8</c>
+              <c>398.4</c>
+            </r>
+            <r>
+              <c>2005-12-31</c>
+              <c>3900.5</c>
+              <c>469</c>
+              <c>3431.5</c>
+              <c>5.6</c>
+              <c>31.8</c>
+              <c>140.8</c>
+              <c>290.8</c>
+              <c>726.9</c>
+              <c>2287.8</c>
+              <c>416.8</c>
+            </r>
+            <r>
+              <c>2004-12-31</c>
+              <c>3977.3</c>
+              <c>463.2</c>
+              <c>3514.1</c>
+              <c>5.5</c>
+              <c>32.4</c>
+              <c>136.7</c>
+              <c>288.6</c>
+              <c>730.3</c>
+              <c>2362.3</c>
+              <c>421.5</c>
+            </r>
+            <r>
+              <c>2003-12-31</c>
+              <c>4067</c>
+              <c>475.8</c>
+              <c>3591.2</c>
+              <c>5.7</c>
+              <c>32.3</c>
+              <c>142.5</c>
+              <c>295.4</c>
+              <c>741</c>
+              <c>2416.5</c>
+              <c>433.7</c>
+            </r>
+            <r>
+              <c>2002-12-31</c>
+              <c>4125</c>
+              <c>494.4</c>
+              <c>3630.6</c>
+              <c>5.6</c>
+              <c>33.1</c>
+              <c>146.1</c>
+              <c>309.5</c>
+              <c>747</c>
+              <c>2450.7</c>
+              <c>432.9</c>
+            </r>
+            <r>
+              <c>2001-12-31</c>
+              <c>4162.6</c>
+              <c>504.5</c>
+              <c>3658.1</c>
+              <c>5.6</c>
+              <c>31.8</c>
+              <c>148.5</c>
+              <c>318.6</c>
+              <c>741.8</c>
+              <c>2485.7</c>
+              <c>430.5</c>
+            </r>
+            <r>
+              <c>2000-12-31</c>
+              <c>4124.8</c>
+              <c>506.5</c>
+              <c>3618.3</c>
+              <c>5.5</c>
+              <c>32</c>
+              <c>145</c>
+              <c>324</c>
+              <c>728.8</c>
+              <c>2477.3</c>
+              <c>412.2</c>
+            </r>
+            <r>
+              <c>1999-12-31</c>
+              <c>4266.5</c>
+              <c>523</c>
+              <c>3743.6</c>
+              <c>5.7</c>
+              <c>32.8</c>
+              <c>150.1</c>
+              <c>334.3</c>
+              <c>770.4</c>
+              <c>2550.7</c>
+              <c>422.5</c>
+            </r>
+            <r>
+              <c>1998-12-31</c>
+              <c>4615.5</c>
+              <c>566.4</c>
+              <c>4049.1</c>
+              <c>6.3</c>
+              <c>34.4</c>
+              <c>165.2</c>
+              <c>360.5</c>
+              <c>862</c>
+              <c>2728.1</c>
+              <c>459</c>
+            </r>
+            <r>
+              <c>1997-12-31</c>
+              <c>4927.3</c>
+              <c>611</c>
+              <c>4316.3</c>
+              <c>6.8</c>
+              <c>35.9</c>
+              <c>186.1</c>
+              <c>382.1</c>
+              <c>919.6</c>
+              <c>2891.8</c>
+              <c>505.7</c>
+            </r>
+            <r>
+              <c>1996-12-31</c>
+              <c>5087.6</c>
+              <c>636.6</c>
+              <c>4451</c>
+              <c>7.4</c>
+              <c>36.3</c>
+              <c>201.9</c>
+              <c>390.9</c>
+              <c>945</c>
+              <c>2980.3</c>
+              <c>525.7</c>
+            </r>
+            <r>
+              <c>1995-12-31</c>
+              <c>5274.9</c>
+              <c>684.5</c>
+              <c>4591.3</c>
+              <c>8.2</c>
+              <c>37.1</c>
+              <c>220.9</c>
+              <c>418.3</c>
+              <c>987.1</c>
+              <c>3043.8</c>
+              <c>560.4</c>
+            </r>
+            <r>
+              <c>1994-12-31</c>
+              <c>5373.5</c>
+              <c>713.6</c>
+              <c>4660</c>
+              <c>9</c>
+              <c>39.3</c>
+              <c>237.7</c>
+              <c>427.6</c>
+              <c>1042</c>
+              <c>3026.7</c>
+              <c>591.3</c>
+            </r>
+            <r>
+              <c>1993-12-31</c>
+              <c>5484.4</c>
+              <c>746.8</c>
+              <c>4737.7</c>
+              <c>9.5</c>
+              <c>41.1</c>
+              <c>255.9</c>
+              <c>440.3</c>
+              <c>1099.2</c>
+              <c>3032.4</c>
+              <c>606.1</c>
+            </r>
+            <r>
+              <c>1992-12-31</c>
+              <c>5660.2</c>
+              <c>757.5</c>
+              <c>4902.7</c>
+              <c>9.3</c>
+              <c>42.8</c>
+              <c>263.6</c>
+              <c>441.8</c>
+              <c>1168.2</c>
+              <c>3103</c>
+              <c>631.5</c>
+            </r>
+            <r>
+              <c>1991-12-31</c>
+              <c>5897.8</c>
+              <c>758.1</c>
+              <c>5139.7</c>
+              <c>9.8</c>
+              <c>42.3</c>
+              <c>272.7</c>
+              <c>433.3</c>
+              <c>1252</c>
+              <c>3228.8</c>
+              <c>658.9</c>
+            </r>
+            <r>
+              <c>1990-12-31</c>
+              <c>5820.3</c>
+              <c>731.8</c>
+              <c>5088.5</c>
+              <c>9.4</c>
+              <c>41.2</c>
+              <c>257</c>
+              <c>424.1</c>
+              <c>1235.9</c>
+              <c>3194.8</c>
+              <c>657.8</c>
+            </r>
+            <r>
+              <c>1989-12-31</c>
+              <c>5741</c>
+              <c>663.1</c>
+              <c>5077.9</c>
+              <c>8.7</c>
+              <c>38.1</c>
+              <c>233</c>
+              <c>383.4</c>
+              <c>1276.3</c>
+              <c>3171.3</c>
+              <c>630.4</c>
+            </r>
+            <r>
+              <c>1988-12-31</c>
+              <c>5664.2</c>
+              <c>637.2</c>
+              <c>5027.1</c>
+              <c>8.4</c>
+              <c>37.6</c>
+              <c>220.9</c>
+              <c>370.2</c>
+              <c>1309.2</c>
+              <c>3134.9</c>
+              <c>582.9</c>
+            </r>
+            <r>
+              <c>1987-12-31</c>
+              <c>5550</c>
+              <c>609.7</c>
+              <c>4940.3</c>
+              <c>8.3</c>
+              <c>37.4</c>
+              <c>212.7</c>
+              <c>351.3</c>
+              <c>1329.6</c>
+              <c>3081.3</c>
+              <c>529.5</c>
+            </r>
+            <r>
+              <c>1986-12-31</c>
+              <c>5480.4</c>
+              <c>620.1</c>
+              <c>4881.8</c>
+              <c>8.6</c>
+              <c>38.1</c>
+              <c>226</c>
+              <c>347.4</c>
+              <c>1349.8</c>
+              <c>3022.1</c>
+              <c>509.8</c>
+            </r>
+            <r>
+              <c>1985-12-31</c>
+              <c>5207.1</c>
+              <c>556.6</c>
+              <c>4650.5</c>
+              <c>8</c>
+              <c>37.1</c>
+              <c>208.5</c>
+              <c>302.9</c>
+              <c>1287.3</c>
+              <c>2901.2</c>
+              <c>462</c>
+            </r>
+            <r>
+              <c>1984-12-31</c>
+              <c>5031.3</c>
+              <c>539.2</c>
+              <c>4492.1</c>
+              <c>7.9</c>
+              <c>35.7</c>
+              <c>205.4</c>
+              <c>290.2</c>
+              <c>1263.7</c>
+              <c>2791.3</c>
+              <c>437.1</c>
+            </r>
+            <r>
+              <c>1983-12-31</c>
+              <c>5175</c>
+              <c>537.7</c>
+              <c>4637.3</c>
+              <c>8.3</c>
+              <c>33.7</c>
+              <c>216.5</c>
+              <c>279.2</c>
+              <c>1337.7</c>
+              <c>2869</c>
+              <c>430.8</c>
+            </r>
+            <r>
+              <c>1982-12-31</c>
+              <c>5603.7</c>
+              <c>571.1</c>
+              <c>5032.5</c>
+              <c>9.1</c>
+              <c>34</c>
+              <c>238.9</c>
+              <c>289.1</c>
+              <c>1488.8</c>
+              <c>3084.9</c>
+              <c>458.9</c>
+            </r>
+            <r>
+              <c>1981-12-31</c>
+              <c>5858.2</c>
+              <c>594.3</c>
+              <c>5263.8</c>
+              <c>9.8</c>
+              <c>36</c>
+              <c>258.7</c>
+              <c>289.7</c>
+              <c>1649.5</c>
+              <c>3139.7</c>
+              <c>474.7</c>
+            </r>
+            <r>
+              <c>1980-12-31</c>
+              <c>5950</c>
+              <c>596.6</c>
+              <c>5353.3</c>
+              <c>10.2</c>
+              <c>36.8</c>
+              <c>251.1</c>
+              <c>298.5</c>
+              <c>1684.1</c>
+              <c>3167</c>
+              <c>502.2</c>
+            </r>
+            <r>
+              <c>1979-12-31</c>
+              <c>5565.5</c>
+              <c>548.9</c>
+              <c>5016.6</c>
+              <c>9.8</c>
+              <c>34.7</c>
+              <c>218.4</c>
+              <c>286</c>
+              <c>1511.9</c>
+              <c>2999.1</c>
+              <c>505.6</c>
+            </r>
+            <r>
+              <c>1978-12-31</c>
+              <c>5140.4</c>
+              <c>497.8</c>
+              <c>4642.5</c>
+              <c>9</c>
+              <c>31</c>
+              <c>195.8</c>
+              <c>262.1</c>
+              <c>1434.6</c>
+              <c>2747.4</c>
+              <c>460.5</c>
+            </r>
+            <r>
+              <c>1977-12-31</c>
+              <c>5077.6</c>
+              <c>475.9</c>
+              <c>4601.7</c>
+              <c>8.8</c>
+              <c>29.4</c>
+              <c>190.7</c>
+              <c>247</c>
+              <c>1419.8</c>
+              <c>2729.9</c>
+              <c>451.9</c>
+            </r>
+            <r>
+              <c>1976-12-31</c>
+              <c>5287.3</c>
+              <c>467.8</c>
+              <c>4819.5</c>
+              <c>8.7</c>
+              <c>26.6</c>
+              <c>199.3</c>
+              <c>233.2</c>
+              <c>1448.2</c>
+              <c>2921.3</c>
+              <c>450</c>
+            </r>
+            <r>
+              <c>1975-12-31</c>
+              <c>5298.5</c>
+              <c>487.8</c>
+              <c>4810.7</c>
+              <c>9.6</c>
+              <c>26.3</c>
+              <c>220.8</c>
+              <c>231.1</c>
+              <c>1532.1</c>
+              <c>2804.8</c>
+              <c>473.7</c>
+            </r>
+            <r>
+              <c>1974-12-31</c>
+              <c>4850.4</c>
+              <c>461.1</c>
+              <c>4389.3</c>
+              <c>9.8</c>
+              <c>26.2</c>
+              <c>209.3</c>
+              <c>215.8</c>
+              <c>1437.7</c>
+              <c>2489.5</c>
+              <c>462.2</c>
+            </r>
+            <r>
+              <c>1973-12-31</c>
+              <c>4154.4</c>
+              <c>417.4</c>
+              <c>3737</c>
+              <c>9.4</c>
+              <c>24.5</c>
+              <c>183.1</c>
+              <c>200.5</c>
+              <c>1222.5</c>
+              <c>2071.9</c>
+              <c>442.6</c>
+            </r>
+            <r>
+              <c>1972-12-31</c>
+              <c>3961.4</c>
+              <c>401</c>
+              <c>3560.4</c>
+              <c>9</c>
+              <c>22.5</c>
+              <c>180.7</c>
+              <c>188.8</c>
+              <c>1140.8</c>
+              <c>1993.6</c>
+              <c>426.1</c>
+            </r>
+            <r>
+              <c>1971-12-31</c>
+              <c>4164.7</c>
+              <c>396</c>
+              <c>3768.8</c>
+              <c>8.6</c>
+              <c>20.5</c>
+              <c>188</c>
+              <c>178.8</c>
+              <c>1163.5</c>
+              <c>2145.5</c>
+              <c>459.8</c>
+            </r>
+            <r>
+              <c>1970-12-31</c>
+              <c>3984.5</c>
+              <c>363.5</c>
+              <c>3621</c>
+              <c>7.9</c>
+              <c>18.7</c>
+              <c>172.1</c>
+              <c>164.8</c>
+              <c>1084.9</c>
+              <c>2079.3</c>
+              <c>456.8</c>
+            </r>
+            <r>
+              <c>1969-12-31</c>
+              <c>3680</c>
+              <c>328.7</c>
+              <c>3351.3</c>
+              <c>7.3</c>
+              <c>18.5</c>
+              <c>148.4</c>
+              <c>154.5</c>
+              <c>984.1</c>
+              <c>1930.9</c>
+              <c>436.2</c>
+            </r>
+            <r>
+              <c>1968-12-31</c>
+              <c>3370.2</c>
+              <c>298.4</c>
+              <c>3071.8</c>
+              <c>6.9</c>
+              <c>15.9</c>
+              <c>131.8</c>
+              <c>143.8</c>
+              <c>932.3</c>
+              <c>1746.6</c>
+              <c>393</c>
+            </r>
+            <r>
+              <c>1967-12-31</c>
+              <c>2989.7</c>
+              <c>253.2</c>
+              <c>2736.5</c>
+              <c>6.2</c>
+              <c>14</c>
+              <c>102.8</c>
+              <c>130.2</c>
+              <c>826.6</c>
+              <c>1575.8</c>
+              <c>334.1</c>
+            </r>
+            <r>
+              <c>1966-12-31</c>
+              <c>2670.8</c>
+              <c>220</c>
+              <c>2450.9</c>
+              <c>5.6</c>
+              <c>13.2</c>
+              <c>80.8</c>
+              <c>120.3</c>
+              <c>721</c>
+              <c>1442.9</c>
+              <c>286.9</c>
+            </r>
+            <r>
+              <c>1965-12-31</c>
+              <c>2449</c>
+              <c>200.2</c>
+              <c>2248.8</c>
+              <c>5.1</c>
+              <c>12.1</c>
+              <c>71.7</c>
+              <c>111.3</c>
+              <c>662.7</c>
+              <c>1329.3</c>
+              <c>256.8</c>
+            </r>
+            <r>
+              <c>1964-12-31</c>
+              <c>2388.1</c>
+              <c>190.6</c>
+              <c>2197.5</c>
+              <c>4.9</c>
+              <c>11.2</c>
+              <c>68.2</c>
+              <c>106.2</c>
+              <c>634.7</c>
+              <c>1315.5</c>
+              <c>247.4</c>
+            </r>
+            <r>
+              <c>1963-12-31</c>
+              <c>2180.3</c>
+              <c>168.2</c>
+              <c>2012.1</c>
+              <c>4.6</c>
+              <c>9.4</c>
+              <c>61.8</c>
+              <c>92.4</c>
+              <c>576.4</c>
+              <c>1219.1</c>
+              <c>216.6</c>
+            </r>
+            <r>
+              <c>1962-12-31</c>
+              <c>2019.8</c>
+              <c>162.3</c>
+              <c>1857.5</c>
+              <c>4.6</c>
+              <c>9.4</c>
+              <c>59.7</c>
+              <c>88.6</c>
+              <c>535.2</c>
+              <c>1124.8</c>
+              <c>197.4</c>
+            </r>
+            <r>
+              <c>1961-12-31</c>
+              <c>1906.1</c>
+              <c>158.1</c>
+              <c>1747.9</c>
+              <c>4.8</c>
+              <c>9.4</c>
+              <c>58.3</c>
+              <c>85.7</c>
+              <c>518.9</c>
+              <c>1045.4</c>
+              <c>183.6</c>
+            </r>
+            <r>
+              <c>1960-12-31</c>
+              <c>1887.2</c>
+              <c>160.9</c>
+              <c>1726.3</c>
+              <c>5.1</c>
+              <c>9.6</c>
+              <c>60.1</c>
+              <c>86.1</c>
+              <c>508.6</c>
+              <c>1034.7</c>
+              <c>183</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="314" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9316_61cabb855410474ebb27d88022086f08_\Engine_8104_b37155bc88514bfe8a6fe4490c70203c_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+        <Position x="150" y="502" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JSON_Field>DownloadData</JSON_Field>
+          <IncludeInOutput value="False" />
+          <SingleField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Parse the JSON data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="54" y="502" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>Field1</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="Field1" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="Field1" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>1</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Download data from URL</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="954" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9316_61cabb855410474ebb27d88022086f08_\Engine_8104_e92ba2c35e7d4dbf88112b345c236af5_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="502" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([JSON_Name], "[a-z]+[_]*[a-z]+\.[0-9].*")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Filter on records wanted</AnnotationText>
+          <DefaultAnnotationText>REGEX_Match([JSON_Name], "[a-z]+[_]*[a-z]+\.[0-9].*")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="354" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>JSON_Name</Field>
+          <RegExExpression value="(.*)(\.)([0-9]+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>JSON_Name</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_WString" size="1073741823" />
+            <Field field="RegExOut2" type="V_WString" size="1073741823" />
+            <Field field="RegExOut3" type="V_WString" size="1073741823" />
+          </ParseComplex>
+          <Match>
+            <Field>JSON_Name_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Split data into segments</AnnotationText>
+          <DefaultAnnotationText>Parse:
+(.*)(\.)([0-9]+)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="450" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="RegExOut1" />
+          </GroupFields>
+          <HeaderField field="RegExOut3" />
+          <DataField field="JSON_ValueString" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Transpose into columns</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from JSON_Name" name="RegExOut1" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="0" size="2048" source="CrossTab:Header:RegExOut3:0:Concat:" type="V_WString" />
+            <Field name="1" size="2048" source="CrossTab:Header:RegExOut3:1:Concat:" type="V_WString" />
+            <Field name="2" size="2048" source="CrossTab:Header:RegExOut3:2:Concat:" type="V_WString" />
+            <Field name="3" size="2048" source="CrossTab:Header:RegExOut3:3:Concat:" type="V_WString" />
+            <Field name="4" size="2048" source="CrossTab:Header:RegExOut3:4:Concat:" type="V_WString" />
+            <Field name="5" size="2048" source="CrossTab:Header:RegExOut3:5:Concat:" type="V_WString" />
+            <Field name="6" size="2048" source="CrossTab:Header:RegExOut3:6:Concat:" type="V_WString" />
+            <Field name="7" size="2048" source="CrossTab:Header:RegExOut3:7:Concat:" type="V_WString" />
+            <Field name="8" size="2048" source="CrossTab:Header:RegExOut3:8:Concat:" type="V_WString" />
+            <Field name="9" size="2048" source="CrossTab:Header:RegExOut3:9:Concat:" type="V_WString" />
+            <Field name="10" size="2048" source="CrossTab:Header:RegExOut3:10:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RegExOut1" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="546" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>FirstRow</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="RegExOut1" />
+            <Field name="0" />
+            <Field name="1" />
+            <Field name="2" />
+            <Field name="3" />
+            <Field name="4" />
+            <Field name="5" />
+            <Field name="6" />
+            <Field name="7" />
+            <Field name="8" />
+            <Field name="9" />
+            <Field name="10" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <FirstRow>
+            <OnError>Warn</OnError>
+          </FirstRow>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Add column titles</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from JSON_Name" name="column_names" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="Date" size="2048" source="CrossTab:Header:RegExOut3:0:Concat:" type="V_WString" />
+            <Field name="Total" size="2048" source="CrossTab:Header:RegExOut3:1:Concat:" type="V_WString" />
+            <Field name="Violent" size="2048" source="CrossTab:Header:RegExOut3:2:Concat:" type="V_WString" />
+            <Field name="Property" size="2048" source="CrossTab:Header:RegExOut3:3:Concat:" type="V_WString" />
+            <Field name="Murder" size="2048" source="CrossTab:Header:RegExOut3:4:Concat:" type="V_WString" />
+            <Field name="Forcible Rape" size="2048" source="CrossTab:Header:RegExOut3:5:Concat:" type="V_WString" />
+            <Field name="Robbery" size="2048" source="CrossTab:Header:RegExOut3:6:Concat:" type="V_WString" />
+            <Field name="Aggr Assault" size="2048" source="CrossTab:Header:RegExOut3:7:Concat:" type="V_WString" />
+            <Field name="Burglary" size="2048" source="CrossTab:Header:RegExOut3:8:Concat:" type="V_WString" />
+            <Field name="Larceny Theft" size="2048" source="CrossTab:Header:RegExOut3:9:Concat:" type="V_WString" />
+            <Field name="Vehicle Theft" size="2048" source="CrossTab:Header:RegExOut3:10:Concat:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="column_names" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="678" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="column_names" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Eliminate unnecessary field</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="810" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Date" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sort by date decending</AnnotationText>
+          <DefaultAnnotationText>Date - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="342" y="594" width="192" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Note:
+
+An alternative approach would be to use the Text to columns tools to parse the colmun header and data values. The delimiter would be the (.) symbol.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="6" y="606" width="124" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>The download tool enables you to consume data from RESTful webe serverice. In this case we will issue a simple Get under the Payload TAB.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="174" y="618" width="132" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>The JSON Parse tool will create a Transposed (vertical) veiw of the downloaded JSON data.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Step1_DataPrep_JSON_Parsing_Solution</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,2256 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="270" y="603.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Text Field</Field>
+          <NumFields value="1" />
+          <Delimeters value="\s" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Text Field" name="Text Field" size="50" source="TextToColumns: Parsed from Text Field" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="186" y="603.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Text Field</FieldFind>
+          <FieldSearch>Find</FieldSearch>
+          <ReplaceFoundField>Replace</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field name="Text Field" size="50" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="711.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="37" />
+          <Fields>
+            <Field name="Find" />
+            <Field name="Replace" />
+          </Fields>
+          <Data>
+            <r>
+              <c>^</c>
+              <c>^</c>
+            </r>
+            <r>
+              <c>/</c>
+              <c><![CDATA[ ]]></c>
+            </r>
+            <r>
+              <c>(</c>
+              <c />
+            </r>
+            <r>
+              <c>)</c>
+              <c />
+            </r>
+            <r>
+              <c>$</c>
+              <c />
+            </r>
+            <r>
+              <c>.</c>
+              <c />
+            </r>
+            <r>
+              <c>,</c>
+              <c />
+            </r>
+            <r>
+              <c>-</c>
+              <c />
+            </r>
+            <r>
+              <c>"</c>
+              <c />
+            </r>
+            <r>
+              <c>%</c>
+              <c />
+            </r>
+            <r>
+              <c>1</c>
+              <c />
+            </r>
+            <r>
+              <c>2</c>
+              <c />
+            </r>
+            <r>
+              <c>3</c>
+              <c />
+            </r>
+            <r>
+              <c>4</c>
+              <c />
+            </r>
+            <r>
+              <c>5</c>
+              <c />
+            </r>
+            <r>
+              <c>6</c>
+              <c />
+            </r>
+            <r>
+              <c>7</c>
+              <c />
+            </r>
+            <r>
+              <c>8</c>
+              <c />
+            </r>
+            <r>
+              <c>9</c>
+              <c />
+            </r>
+            <r>
+              <c>0</c>
+              <c />
+            </r>
+            <r>
+              <c>#</c>
+              <c />
+            </r>
+            <r>
+              <c>&amp;</c>
+              <c />
+            </r>
+            <r>
+              <c>@</c>
+              <c />
+            </r>
+            <r>
+              <c>!</c>
+              <c />
+            </r>
+            <r>
+              <c>\</c>
+              <c />
+            </r>
+            <r>
+              <c>|</c>
+              <c />
+            </r>
+            <r>
+              <c>{</c>
+              <c />
+            </r>
+            <r>
+              <c>}</c>
+              <c />
+            </r>
+            <r>
+              <c>*</c>
+              <c />
+            </r>
+            <r>
+              <c>&lt;</c>
+              <c />
+            </r>
+            <r>
+              <c>&gt;</c>
+              <c />
+            </r>
+            <r>
+              <c>?</c>
+              <c />
+            </r>
+            <r>
+              <c>~</c>
+              <c />
+            </r>
+            <r>
+              <c>`</c>
+              <c />
+            </r>
+            <r>
+              <c>:</c>
+              <c />
+            </r>
+            <r>
+              <c>;</c>
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Punctuation to remove</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Find" size="1" source="TextInput:" type="String" />
+            <Field name="Replace" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="738" y="615.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Response" type="V_String" size="50" expression="uppercase ([Response])" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Response=uppercase ([Response])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="534" y="603.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>isempty([Response]) || length([Response]) &lt;3</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>isempty([Response]) || length([Response]) &lt;3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="TextToColumns: Parsed from Text Field" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="TextToColumns: Parsed from Text Field" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="834" y="627.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Response</FieldFind>
+          <FieldSearch>Find</FieldSearch>
+          <ReplaceFoundField>Find</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="True" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Flag" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="896.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="11" />
+          <Fields>
+            <Field name="Find" />
+            <Field name="Flag" />
+          </Fields>
+          <Data>
+            <r>
+              <c>THE</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>AND</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>OR</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>WITH</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>THIS</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FOR</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>FROM</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>I</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>GOT</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>GET</c>
+              <c>1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Words to remove</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Find" size="4" source="TextInput:" type="String" />
+            <Field name="Flag" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="930" y="627.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Flag]!=1</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Flag]!=1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+            <Field name="Flag" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1674" y="723.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+            <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+            <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+            <Field name="word length" source="Formula: (Multiple Sources)" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1770" y="723.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count]&gt;=1</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count]&gt;=1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+            <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+            <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+            <Field name="word length" source="Formula: (Multiple Sources)" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+            <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+            <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+            <Field name="word length" source="Formula: (Multiple Sources)" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1866" y="711.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Concat_GROUP ID" selected="False" />
+            <SelectField field="word length" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+            <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2094" y="668.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output32</Name>
+          <Abbrev>SC</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Output32</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="366" y="603.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="GROUP ID" selected="True" />
+            <SelectField field="Text Field" selected="True" rename="Response" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="TextToColumns: Parsed from Text Field" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="519.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8944_f23b15cb49434c268eb77e205ac29a4b_\Engine_7400_8712c8a659174502b9a8377e19b0b7a4_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="519.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8944_f23b15cb49434c268eb77e205ac29a4b_\Engine_7400_b925122e774545209ed38aee9c00619e_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1950" y="711.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Count" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+            <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Count" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="519.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input39</Name>
+          <Abbrev />
+          <ShowFieldMap value="True" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">.\Macro IN.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Input39</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+            <Field name="Text Field" size="50" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1878" y="848.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Concat_GROUP ID</Field>
+          <NumFields value="1" />
+          <Delimeters value="," />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+            <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_GROUP ID" name="Concat_GROUP ID" size="2147483647" source="TextToColumns: Parsed from Concat_GROUP ID" type="V_String" />
+            <Field name="word length" source="Formula: (Multiple Sources)" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1974" y="848.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <SelectFields>
+            <SelectField field="Tuples" selected="True" rename="Tuple" />
+            <SelectField field="Count" selected="True" />
+            <SelectField field="word length" selected="True" />
+            <SelectField field="Concat_GROUP ID" selected="True" rename="Group_ID" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tuple" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+            <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+            <Field name="word length" source="Formula: (Multiple Sources)" type="Int16" />
+            <Field description="TextToColumns: Parsed from Concat_GROUP ID" name="Group_ID" size="2147483647" source="TextToColumns: Parsed from Concat_GROUP ID" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2094" y="884.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output54</Name>
+          <Abbrev>TBL</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Output54</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Label.Label">
+        <Position x="0" y="386.2" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.LabelGroup.LabelGroup">
+        <Position x="0" y="386.2" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="386.2" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="386.2" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="58.99998" y="58.99998" width="448.25" height="352.2" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Interface Tools</Caption>
+          <Folded value="False">False</Folded>
+          <Style Transparency="1" Margin="25" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="83.99998" y="103" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>one</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="151.85" y="103" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>two</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="219.7" y="103" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>three</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+            <Position x="287.55" y="103" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Four</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+            <Position x="355.4" y="103" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Must have at least X groups</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="219.7" y="215.1" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="287.55" y="215.1" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="355.4" y="215.1" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Condition.Condition">
+            <Position x="423.25" y="215.1" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="151.85" y="327.2" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="219.7" y="327.2" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Break 1 word path</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="287.55" y="327.2" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Break 2 word path</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="355.4" y="327.2" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Break 3 word path</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+            <Position x="423.25" y="327.2" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Break 1 word path</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxGuiToolkit.Error.Error">
+            <Position x="83.99998" y="327.2" width="59" height="59" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name>Must check 2 word touple, 3 word tuple or both check boxes</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1770" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8944_f23b15cb49434c268eb77e205ac29a4b_\Engine_7400_e7ccd323399342aa842d5125690e5da9_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1014" y="1071.2" width="563" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container - Three Word Flow</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="1074" y="1150.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>respid</UpdateField_Name>
+              <CreateField_Name>Tuples</CreateField_Name>
+              <CreateField_Type>String</CreateField_Type>
+              <CreateField_Size>512</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="2" />
+              <Expression>[Row-2:Response]+" "+[Row-1:Response]+" "+[Response]</Expression>
+              <GroupByFields>
+                <Field field="GROUP ID" />
+              </GroupByFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Row-2:Response]+" "+[Row-1:Response]+" "+[Response]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1266" y="1162.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Tuples" action="GroupBy" rename="Tuples" />
+                <SummarizeField field="Tuples" action="Count" rename="Count" />
+                <SummarizeField field="GROUP ID" action="Concat" rename="Concat_GROUP ID">
+                  <Separator>,</Separator>
+                </SummarizeField>
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Tuples" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1362" y="1162.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1170" y="1150.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>left([Tuples],1) == " "</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>left([Tuples],1) == " "</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1458" y="1162.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="word length" type="Int16" size="2" expression="3" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>word length=3</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+                <Field name="word length" source="Formula: 3" type="Int16" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1014" y="783.2" width="563" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container - Two Word Flow</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="1074" y="870" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>respid</UpdateField_Name>
+              <CreateField_Name>Tuples</CreateField_Name>
+              <CreateField_Type>String</CreateField_Type>
+              <CreateField_Size>512</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="2" />
+              <Expression>[Row-1:Response]+" "+[Response]</Expression>
+              <GroupByFields>
+                <Field field="GROUP ID" />
+              </GroupByFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Row-1:Response]+" "+[Response]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1266" y="874.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Tuples" action="GroupBy" rename="Tuples" />
+                <SummarizeField field="Tuples" action="Count" rename="Count" />
+                <SummarizeField field="GROUP ID" action="Concat" rename="Concat_GROUP ID">
+                  <Separator>,</Separator>
+                </SummarizeField>
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Tuples" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1362" y="874.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1170" y="862.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>left([Tuples],1) == " "</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>left([Tuples],1) == " "</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1458" y="874.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="word length" type="Int16" size="2" expression="2" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>word length=2</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+                <Field name="word length" source="Formula: 2" type="Int16" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1014" y="1376.2" width="563" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container - Four Word Flow</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="1074" y="1455.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>respid</UpdateField_Name>
+              <CreateField_Name>Tuples</CreateField_Name>
+              <CreateField_Type>String</CreateField_Type>
+              <CreateField_Size>512</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="3" />
+              <Expression>[Row-3:Response]+" "+[Row-2:Response]+" "+[Row-1:Response]+" "+[Response]</Expression>
+              <GroupByFields>
+                <Field field="GROUP ID" />
+              </GroupByFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Row-3:Response]+" "+[Row-2:Response]+" "+[Row-1:Response]+" ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1266" y="1467.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Tuples" action="GroupBy" rename="Tuples" />
+                <SummarizeField field="Tuples" action="Count" rename="Count" />
+                <SummarizeField field="GROUP ID" action="Concat" rename="Concat_GROUP ID">
+                  <Separator>,</Separator>
+                </SummarizeField>
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Tuples" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1362" y="1467.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1170" y="1455.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>left([Tuples],1) == " "</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>left([Tuples],1) == " "</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" type="String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="GROUP ID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1458" y="1467.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="word length" type="Int16" size="2" expression="4" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>word length=4</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Row-3:Response]+&quot; &quot;+[Row-2:Response]+&quot; &quot;+[Row-1:Response]+&quot; &quot;+[Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+                <Field name="word length" source="Formula: 4" type="Int16" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1014" y="440.2" width="563" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container - One Word Flow</Caption>
+          <Style TextColor="#2f4f4f" FillColor="#ecf2f2" BorderColor="#2f4f4f" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="1074" y="519.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>respid</UpdateField_Name>
+              <CreateField_Name>Tuples</CreateField_Name>
+              <CreateField_Type>String</CreateField_Type>
+              <CreateField_Size>512</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="2" />
+              <Expression>[Response]</Expression>
+              <GroupByFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Response]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Response]" name="Tuples" size="512" source="Formula: [Response]" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1266" y="531.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Tuples" action="GroupBy" rename="Tuples" />
+                <SummarizeField field="Tuples" action="Count" rename="Count" />
+                <SummarizeField field="GROUP ID" action="Concat" rename="Concat_GROUP ID">
+                  <Separator>,</Separator>
+                </SummarizeField>
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Tuples" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1362" y="531.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1170" y="519.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>left([Tuples],1) == " "</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>left([Tuples],1) == " "</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Response]" name="Tuples" size="512" source="Formula: [Response]" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="GROUP ID" size="4" source="TextInput:" type="String" />
+                <Field description="TextToColumns: Parsed from Text Field" name="Response" size="50" source="Formula: uppercase ([Response])" type="V_String" />
+                <Field name="Flag" source="TextInput:" type="Byte" />
+                <Field description="Formula: [Response]" name="Tuples" size="512" source="Formula: [Response]" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1458" y="531.2" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="word length" type="Int16" size="2" expression="1" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>word length=1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="Formula: [Response]" name="Tuples" size="512" source="Summarize: GroupBy - Tuples" type="String" />
+                <Field name="Count" source="Summarize: Count - Tuples" type="Int64" />
+                <Field name="Concat_GROUP ID" size="2147483647" source="Summarize: Concat - GROUP ID" type="V_String" />
+                <Field name="word length" source="Formula: 1" type="Int16" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="8" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="8" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="14" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="False" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="False" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="55" Connection="Action" />
+      <Destination ToolID="29" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection name="one" Wireless="True">
+      <Origin ToolID="67" Connection="Question" />
+      <Destination ToolID="61" Connection="Question" />
+    </Connection>
+    <Connection name="one" Wireless="True">
+      <Origin ToolID="67" Connection="Question" />
+      <Destination ToolID="60" Connection="Question" />
+    </Connection>
+    <Connection name="two" Wireless="True">
+      <Origin ToolID="68" Connection="Question" />
+      <Destination ToolID="60" Connection="Question" />
+    </Connection>
+    <Connection name="three" Wireless="True">
+      <Origin ToolID="69" Connection="Question" />
+      <Destination ToolID="60" Connection="Question" />
+    </Connection>
+    <Connection name="Four" Wireless="True">
+      <Origin ToolID="70" Connection="Question" />
+      <Destination ToolID="60" Connection="Question" />
+    </Connection>
+    <Connection name="two" Wireless="True">
+      <Origin ToolID="68" Connection="Question" />
+      <Destination ToolID="62" Connection="Question" />
+    </Connection>
+    <Connection name="three" Wireless="True">
+      <Origin ToolID="69" Connection="Question" />
+      <Destination ToolID="63" Connection="Question" />
+    </Connection>
+    <Connection name="Four" Wireless="True">
+      <Origin ToolID="70" Connection="Question" />
+      <Destination ToolID="64" Connection="Question" />
+    </Connection>
+    <Connection name="Must have at least X groups" Wireless="True">
+      <Origin ToolID="72" Connection="Question" />
+      <Destination ToolID="55" Connection="Question" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="61" Connection="False Condition" />
+      <Destination ToolID="56" Connection="Condition" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="62" Connection="False Condition" />
+      <Destination ToolID="57" Connection="Condition" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="63" Connection="False Condition" />
+      <Destination ToolID="58" Connection="Condition" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="64" Connection="False Condition" />
+      <Destination ToolID="59" Connection="Condition" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="56" Connection="Action" />
+      <Destination ToolID="50" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="57" Connection="Action" />
+      <Destination ToolID="25" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="58" Connection="Action" />
+      <Destination ToolID="27" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="59" Connection="Action" />
+      <Destination ToolID="44" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="False" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="False" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="False" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="False" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>one</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>two</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>three</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Four</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Must have at least X groups</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>TUPLE COUNT</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="55" />
+              <Mode>Simple</Mode>
+              <Variable>Must have at least X groups</Variable>
+              <Replace value="True" />
+              <ReplaceText>1</ReplaceText>
+              <Destination>29/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>Error</Type>
+              <Description>Must check 2 word touple, 3 word tuple or both check boxes</Description>
+              <ToolId value="60" />
+              <Expression>!([one] || [two] || [three] || [Four])</Expression>
+            </Action>
+          </True>
+        </NoCondition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="61" />
+          <Expression>[one]</Expression>
+          <True />
+          <False>
+            <Action>
+              <Type>DeleteTool</Type>
+              <Description />
+              <ToolId value="56" />
+              <DeleteTool value="50" />
+            </Action>
+          </False>
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="62" />
+          <Expression>[two]</Expression>
+          <True />
+          <False>
+            <Action>
+              <Type>DeleteTool</Type>
+              <Description />
+              <ToolId value="57" />
+              <DeleteTool value="25" />
+            </Action>
+          </False>
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="63" />
+          <Expression>[three]</Expression>
+          <True />
+          <False>
+            <Action>
+              <Type>DeleteTool</Type>
+              <Description />
+              <ToolId value="58" />
+              <DeleteTool value="27" />
+            </Action>
+          </False>
+        </Condition>
+        <Condition>
+          <Type>Condition</Type>
+          <Description />
+          <ToolId value="64" />
+          <Expression>[four]</Expression>
+          <True />
+          <False>
+            <Action>
+              <Type>DeleteTool</Type>
+              <Description />
+              <ToolId value="59" />
+              <DeleteTool value="44" />
+            </Action>
+          </False>
+        </Condition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Options</Description>
+          <Name>Tab (73)</Name>
+          <ToolId value="73" />
+          <Questions>
+            <Question>
+              <Type>Label</Type>
+              <Description>Count and group Tuples in a text field</Description>
+              <Name>Label (66)</Name>
+              <ToolId value="66" />
+            </Question>
+            <Question>
+              <Type>LabelGroup</Type>
+              <Description>How many words per tuple</Description>
+              <Name>LabelGroup (71)</Name>
+              <ToolId value="71" />
+              <Questions>
+                <Question>
+                  <Type>BooleanGroup</Type>
+                  <Description>ONE</Description>
+                  <Name>one</Name>
+                  <ToolId value="67" />
+                  <Questions />
+                  <Default value="True" />
+                  <Collapsable value="False" />
+                </Question>
+                <Question>
+                  <Type>BooleanGroup</Type>
+                  <Description>TWO</Description>
+                  <Name>two</Name>
+                  <ToolId value="68" />
+                  <Questions />
+                  <Default value="True" />
+                  <Collapsable value="False" />
+                </Question>
+                <Question>
+                  <Type>BooleanGroup</Type>
+                  <Description>THREE</Description>
+                  <Name>three</Name>
+                  <ToolId value="69" />
+                  <Questions />
+                  <Default value="True" />
+                  <Collapsable value="False" />
+                </Question>
+                <Question>
+                  <Type>BooleanGroup</Type>
+                  <Description>FOUR</Description>
+                  <Name>Four</Name>
+                  <ToolId value="70" />
+                  <Questions />
+                  <Default value="True" />
+                  <Collapsable value="False" />
+                </Question>
+              </Questions>
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>Minimum count of tuples per group</Description>
+              <Name>Must have at least X groups</Name>
+              <ToolId value="72" />
+              <Minimum value="0" />
+              <Maximum value="10000" />
+              <Increment value="1" />
+              <Default value="2" />
+              <Decimals value="0" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Output32</Description>
+              <Name>Output32</Name>
+              <ToolId value="76" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Output54</Description>
+              <Name>Output54</Name>
+              <ToolId value="77" />
+            </Question>
+          </Questions>
+        </Question>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Input39</Description>
+          <Name>Tab (74)</Name>
+          <ToolId value="74" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Input39</Description>
+              <Name>Input39</Name>
+              <ToolId value="75" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="32" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="77" Selected="True" />
+        <Tool ToolId="34" Selected="False" />
+        <Tool ToolId="35" Selected="False" />
+        <Tool ToolId="75" Selected="True" />
+        <Tool ToolId="76" Selected="True" />
+        <Tool ToolId="79" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
