@@ -1,0 +1,1596 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="522" y="114" width="192" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Solution</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="174" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width />
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Status" selected="True" Alignment="Left" Width="" Borders="None" />
+            <Field name="Counts" selected="True" Alignment="Right" />
+            <Field name="YTD Earnings" selected="True" Alignment="Right" />
+            <Field name="Status Count" selected="True" Alignment="Right" Width="" Places="0" />
+            <Field name="Total Group A" selected="True" Alignment="Right" />
+            <Field name="Total Group B" selected="True" Alignment="Right" />
+            <Field name="% Group A" selected="True" Alignment="Right" />
+            <Field name="% Group B" selected="True" Alignment="Right" />
+            <Field name="Ratio 1" selected="True" Alignment="Right" />
+            <Field name="Ratio 2" selected="True" Alignment="Right" />
+            <Field name="Ratio 3" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="--Arial" Size="7" TextColor="#000000" BackColor="#e1e1e1" AltColor="#e1e1e1" RowGroup="1" />
+            <Style Name="Header" Font="--Arial" Size="7" TextColor="#ffffff" BackColor="#494949" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="Per Row" BasicColBorder="All Columns (Override Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="2fab73be-298c-4001-86e0-0a2a3e597506">
+              <RowRule value="True" />
+              <HighPrecedence value="True" />
+              <Field />
+              <Test>Simple</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar>Status</SimpleVar>
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>Total</SimpleConst>
+              <Formula>1</Formula>
+              <Style Font="B-Arial" />
+              <PrettyName>Total</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="186" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width />
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Status" selected="True" Alignment="Right" />
+            <Field name="Counts" selected="True" Alignment="Right" />
+            <Field name="YTD Earnings" selected="True" Alignment="Right" />
+            <Field name="Status Counts" selected="True" Alignment="Right" />
+            <Field name="Total Group A" selected="True" Alignment="Right" />
+            <Field name="Total Group B" selected="True" Alignment="Right" />
+            <Field name="% Group A" selected="True" Alignment="Right" />
+            <Field name="% Group B" selected="True" Alignment="Right" />
+            <Field name="Ratio 1" selected="True" Alignment="Right" />
+            <Field name="Ratio 2" selected="True" Alignment="Right" />
+            <Field name="Ratio 3" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="--Arial" Size="7" TextColor="#000000" BackColor="#e1e1e1" AltColor="#e1e1e1" RowGroup="1" />
+            <Style Name="Header" Font="--Arial" Size="7" TextColor="#ffffff" BackColor="#494949" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="Per Row" BasicColBorder="All Columns (Override Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="2fab73be-298c-4001-86e0-0a2a3e597506">
+              <RowRule value="True" />
+              <HighPrecedence value="True" />
+              <Field />
+              <Test>Simple</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar>Status</SimpleVar>
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>Total</SimpleConst>
+              <Formula>1</Formula>
+              <Style Font="B-Arial" />
+              <PrettyName>Total</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="186" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width />
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="True">
+            <Field name="DMA" selected="True" Alignment="Left" Width="" />
+            <Field name="Total Expanded Subs" selected="True" Alignment="Right" Alias="Sub Counts" Width="" Places="0" />
+            <Field name="YTD Revenue" selected="True" Alignment="Right" Prefix="$" />
+            <Field name="Zones" selected="True" Alignment="Right" />
+            <Field name="Total SD Insertable" selected="True" Alignment="Right" />
+            <Field name="Total HD Insertable" selected="True" Alignment="Right" />
+            <Field name="% of HD to SD" selected="True" Alignment="Right" Postfix="%" Places="2" />
+            <Field name="Avg Subs/Zone" selected="True" Alignment="Right" />
+            <Field name="Avg YTD Rev/Zone" selected="True" Alignment="Right" Prefix="$" Places="2" Width="" />
+            <Field name="Avg SD/Zone" selected="True" Alignment="Right" />
+            <Field name="Avg HD/Zone" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="7" TextColor="#000000" BackColor="#e1e1e1" AltColor="#e1e1e1" RowGroup="1" />
+            <Style Name="Header" Font="--Arial" Size="7" TextColor="#ffffff" BackColor="#494949" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="Per Row" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="c17d4b88-cefa-454e-9bca-94c73ccfc1da">
+              <RowRule value="True" />
+              <HighPrecedence value="False" />
+              <Field />
+              <Test>Simple</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar>DMA</SimpleVar>
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>Total</SimpleConst>
+              <Formula>1</Formula>
+              <Style Font="B-Arial" />
+              <PrettyName>Row Rule 1</PrettyName>
+            </Rule>
+            <Rule Name="8cad303a-3c6a-49ee-9130-db4d7ea9b430">
+              <RowRule value="False" />
+              <HighPrecedence value="False" />
+              <Field>DMA</Field>
+              <Test>Simple</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar>DMA</SimpleVar>
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>Total</SimpleConst>
+              <Formula>1</Formula>
+              <Style Font="B-Arial" />
+              <PrettyName>DMA Rule 1</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="858" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRun</GroupingMode>
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width />
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#ffffff" Width="18" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="Layout" selected="True" Width="" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+All Records Combined</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="1122" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>H</Orientation>
+          <Separator>Continuous</Separator>
+          <Width />
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#ffffff" Width="5" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Layout" selected="True" Width="" Alignment="Center" />
+            <Field name="Table" selected="True" Width="" Alignment="Center" />
+            <Field name="Input_#2_Layout" selected="True" Width="" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="774" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRun</GroupingMode>
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width />
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="Table" selected="True" Alignment="Bottom" Width="" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+All Records Combined</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="1002" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="True" />
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Input_#2_Layout" selected="True" rename="Input_#2_Layout" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="318" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text_Upper</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial Narrow;}{\f1\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\b\f0\fs20 Outside List\b0\f1\fs29\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Outside List</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="294" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text_Upper</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\b\f0\fs20 Inside List\b0\fs29\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Inside List</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="318" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <HeaderMode value="True" />
+          <HeaderField>Table</HeaderField>
+          <Position>Above</Position>
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\b\f0\fs20 DMA\b0\fs29\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DMA</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="726" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1266" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\b\f0\fs24 My Company\par
+Model Report FY 2015\par
+\b0\fs29\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>My Company
+Model Report FY 201...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="726" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c><![CDATA[ ]]></c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="882" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Field1" selected="True" Alignment="Center" Width="" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#ffffff" BackColor="#ffffff" AltColor="#ffffff" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#ffffff" BackColor="#ffffff" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="false" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="0ac41f67-7f21-4132-a597-dd398041941b">
+              <RowRule value="False" />
+              <HighPrecedence value="False" />
+              <Field>Field1</Field>
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar />
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style BackColor="#ffffff" />
+              <PrettyName>Field1 Rule 1</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="558" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Text_Upper" selected="True" Width="" Alignment="Center" />
+            <Field name="Table" selected="True" Alignment="Center" />
+            <Field name="Text_Lower" selected="True" Width="" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="438" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text_Lower</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\f0\fs29\par
+\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="438" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text_Lower</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\f0\fs29\par
+\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="558" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Text_Upper" selected="True" Alignment="Center" Width="" />
+            <Field name="Table" selected="True" Alignment="Center" />
+            <Field name="Text_Lower" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="1386" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Text" selected="True" Alignment="Center" Width="" />
+            <Field name="Layout" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="1494" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType>xlsx</TempFileType>
+          <BatchMode value="False" />
+          <DataField>Layout</DataField>
+          <Separator>Continuous</Separator>
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="1440" Height="7200" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="21" />
+          <Fields>
+            <Field name="Total Expanded Subs" />
+            <Field name="YTD Revenue" />
+            <Field name="Zones" />
+            <Field name="Total SD Insertable" />
+            <Field name="Total HD Insertable" />
+            <Field name="% of HD to SD" />
+            <Field name="Avg Subs/Zone" />
+            <Field name="Avg YTD Rev/Zone" />
+            <Field name="Avg SD/Zone" />
+            <Field name="Avg HD/Zone" />
+            <Field name="DMA" />
+          </Fields>
+          <Data>
+            <r>
+              <c>15201</c>
+              <c>0</c>
+              <c>4</c>
+              <c>18</c>
+              <c>0</c>
+              <c>0</c>
+              <c>2185.21995889144</c>
+              <c>0</c>
+              <c>28.9653864779895</c>
+              <c>0</c>
+              <c>Region_1</c>
+            </r>
+            <r>
+              <c>21121</c>
+              <c>0</c>
+              <c>1</c>
+              <c>70</c>
+              <c>49</c>
+              <c>3.65104151660368</c>
+              <c>15904.8360712232</c>
+              <c>0</c>
+              <c>81.4983332603002</c>
+              <c>8.98149322927499</c>
+              <c>Region_2</c>
+            </r>
+            <r>
+              <c>13630</c>
+              <c>1640171.56361533</c>
+              <c>4</c>
+              <c>153</c>
+              <c>38</c>
+              <c>2.31118499955371</c>
+              <c>34704.3260596132</c>
+              <c>125687.639887057</c>
+              <c>104.248515022744</c>
+              <c>216.830120537623</c>
+              <c>Region_3</c>
+            </r>
+            <r>
+              <c>818016</c>
+              <c>0</c>
+              <c>16</c>
+              <c>2331</c>
+              <c>673</c>
+              <c>3.07491491825006</c>
+              <c>21901.5186929248</c>
+              <c>0</c>
+              <c>49.1103190078585</c>
+              <c>161.103897469841</c>
+              <c>Region_4</c>
+            </r>
+            <r>
+              <c>89382</c>
+              <c>9418597.31246451</c>
+              <c>19</c>
+              <c>401</c>
+              <c>99</c>
+              <c>2.50600646405479</c>
+              <c>12092.3395086149</c>
+              <c>1485118.14209221</c>
+              <c>113.296646456187</c>
+              <c>43.2330384767808</c>
+              <c>Region_5</c>
+            </r>
+            <r>
+              <c>1252188</c>
+              <c>36429300.2853081</c>
+              <c>5</c>
+              <c>640</c>
+              <c>1073</c>
+              <c>0.358727043898293</c>
+              <c>62229.1771141404</c>
+              <c>2416530.52548137</c>
+              <c>166.713954215337</c>
+              <c>101.140009751261</c>
+              <c>Region_6</c>
+            </r>
+            <r>
+              <c>15862</c>
+              <c>0</c>
+              <c>9</c>
+              <c>171</c>
+              <c>120</c>
+              <c>0.272294931846507</c>
+              <c>60939.6763037843</c>
+              <c>0</c>
+              <c>0.17008618455615</c>
+              <c>82.7639156795954</c>
+              <c>Region_7</c>
+            </r>
+            <r>
+              <c>40426</c>
+              <c>0</c>
+              <c>4</c>
+              <c>4</c>
+              <c>213</c>
+              <c>4.98162721399721</c>
+              <c>29954.340648403</c>
+              <c>0</c>
+              <c>96.9040664883573</c>
+              <c>59.0894112035375</c>
+              <c>Region_8</c>
+            </r>
+            <r>
+              <c>104054</c>
+              <c>261988.01497905</c>
+              <c>3</c>
+              <c>134</c>
+              <c>263</c>
+              <c>4.14492850521228</c>
+              <c>11109.6210463356</c>
+              <c>980757.675466415</c>
+              <c>34.848646429565</c>
+              <c>109.483320236784</c>
+              <c>Region_9</c>
+            </r>
+            <r>
+              <c>71255</c>
+              <c>5274240.14877965</c>
+              <c>9</c>
+              <c>207</c>
+              <c>24</c>
+              <c>0.445302880429151</c>
+              <c>24988.9787475815</c>
+              <c>1918138.22020426</c>
+              <c>81.4094806279543</c>
+              <c>56.3840691131503</c>
+              <c>Region_10</c>
+            </r>
+            <r>
+              <c>49065</c>
+              <c>2460565.12605096</c>
+              <c>29</c>
+              <c>622</c>
+              <c>305</c>
+              <c>1.57799880668758</c>
+              <c>4406.69152864975</c>
+              <c>918496.108714405</c>
+              <c>121.100958803692</c>
+              <c>87.704339426563</c>
+              <c>Region_11</c>
+            </r>
+            <r>
+              <c>115005</c>
+              <c>0</c>
+              <c>6</c>
+              <c>658</c>
+              <c>615</c>
+              <c>4.4815831602675</c>
+              <c>38901.2093433072</c>
+              <c>0</c>
+              <c>96.8498158579499</c>
+              <c>184.156933182189</c>
+              <c>Region_12</c>
+            </r>
+            <r>
+              <c>30594</c>
+              <c>3138288.94471596</c>
+              <c>4</c>
+              <c>309</c>
+              <c>4</c>
+              <c>0.568921407516719</c>
+              <c>2593.55964615209</c>
+              <c>3167110.91333637</c>
+              <c>132.906839065931</c>
+              <c>4.41237785956179</c>
+              <c>Region_13</c>
+            </r>
+            <r>
+              <c>128189</c>
+              <c>762204.614716141</c>
+              <c>9</c>
+              <c>57</c>
+              <c>366</c>
+              <c>1.6610592604181</c>
+              <c>51586.1880504751</c>
+              <c>1486866.05729686</c>
+              <c>173.080024072686</c>
+              <c>98.7088745980777</c>
+              <c>Region_14</c>
+            </r>
+            <r>
+              <c>27150</c>
+              <c>0</c>
+              <c>5</c>
+              <c>89</c>
+              <c>14</c>
+              <c>0.842357081906487</c>
+              <c>20039.9773674033</c>
+              <c>0</c>
+              <c>83.6386451110334</c>
+              <c>108.374051764462</c>
+              <c>Region_15</c>
+            </r>
+            <r>
+              <c>14460</c>
+              <c>0</c>
+              <c>5</c>
+              <c>244</c>
+              <c>12</c>
+              <c>7.75265705486589e-002</c>
+              <c>15160.2442340239</c>
+              <c>0</c>
+              <c>173.661834833599</c>
+              <c>78.6323788758908</c>
+              <c>Region_16</c>
+            </r>
+            <r>
+              <c>132447</c>
+              <c>0</c>
+              <c>8</c>
+              <c>97</c>
+              <c>282</c>
+              <c>2.56616726230919</c>
+              <c>8514.48008638678</c>
+              <c>0</c>
+              <c>66.9936384618422</c>
+              <c>65.3213402020406</c>
+              <c>Region_17</c>
+            </r>
+            <r>
+              <c>363782</c>
+              <c>0</c>
+              <c>27</c>
+              <c>1593</c>
+              <c>395</c>
+              <c>1.03462537322448</c>
+              <c>43965.6835684159</c>
+              <c>0</c>
+              <c>22.7330824436464</c>
+              <c>6.01223785078647</c>
+              <c>Region_18</c>
+            </r>
+            <r>
+              <c>81102</c>
+              <c>1595976.33621871</c>
+              <c>7</c>
+              <c>1311</c>
+              <c>40</c>
+              <c>2.51750903024325</c>
+              <c>4239.49722057281</c>
+              <c>278337.153888689</c>
+              <c>9.07426590332373</c>
+              <c>73.1680939902137</c>
+              <c>Region_19</c>
+            </r>
+            <r>
+              <c>48566</c>
+              <c>0</c>
+              <c>11</c>
+              <c>312</c>
+              <c>124</c>
+              <c>0.576589248968821</c>
+              <c>79307.506585531</c>
+              <c>0</c>
+              <c>4.29962238396975</c>
+              <c>25.616699995539</c>
+              <c>Region_20</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="6" />
+          <Fields>
+            <Field name="Status" />
+            <Field name="Counts" />
+            <Field name="YTD Earnings" />
+            <Field name="Status Count" />
+            <Field name="Total Group A" />
+            <Field name="Total Group B" />
+            <Field name="% Group A" />
+            <Field name="% Group B" />
+            <Field name="Ratio 1" />
+            <Field name="Ratio 2" />
+            <Field name="Ratio 3" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Zone 1</c>
+              <c>173861</c>
+              <c>16671622.5290002</c>
+              <c>38</c>
+              <c>1965</c>
+              <c>217</c>
+              <c>1.79130359977339e-002</c>
+              <c>4096.23540498027</c>
+              <c>137639.45855291</c>
+              <c>1.73022664897853</c>
+              <c>7.79533703910053</c>
+            </r>
+            <r>
+              <c>Zone 2</c>
+              <c>124055</c>
+              <c>585296.096405193</c>
+              <c>16</c>
+              <c>222</c>
+              <c>275</c>
+              <c>9.47231781074863e-002</c>
+              <c>502.141331548247</c>
+              <c>55493.2396996907</c>
+              <c>1.39259287321835</c>
+              <c>3.8087547464313</c>
+            </r>
+            <r>
+              <c>Zone 3</c>
+              <c>301008</c>
+              <c>0</c>
+              <c>11</c>
+              <c>230</c>
+              <c>304</c>
+              <c>0.16649774027447</c>
+              <c>1276.72961910159</c>
+              <c>0</c>
+              <c>6.52246834212567</c>
+              <c>2.58052620439552</c>
+            </r>
+            <r>
+              <c>Zone 4</c>
+              <c>694624</c>
+              <c>0</c>
+              <c>2</c>
+              <c>1</c>
+              <c>15</c>
+              <c>4.08523344197623e-002</c>
+              <c>66701.072650971</c>
+              <c>0</c>
+              <c>0.69833432684797</c>
+              <c>0.724950204200673</c>
+            </r>
+            <r>
+              <c>Total</c>
+              <c>132107</c>
+              <c>5447258.87434813</c>
+              <c>82</c>
+              <c>919</c>
+              <c>283</c>
+              <c>0.193143892975714</c>
+              <c>3950.40097225873</c>
+              <c>13039.3721795458</c>
+              <c>1.52655312266195</c>
+              <c>7.69769752073173</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="Status" />
+            <Field name="Counts" />
+            <Field name="YTD Earnings" />
+            <Field name="Status Counts" />
+            <Field name="Total Group A" />
+            <Field name="Total Group B" />
+            <Field name="% Group A" />
+            <Field name="% Group B" />
+            <Field name="Ratio 1" />
+            <Field name="Ratio 2" />
+            <Field name="Ratio 3" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Zone 1</c>
+              <c>5812168</c>
+              <c>83097603.0399632</c>
+              <c>488</c>
+              <c>1528</c>
+              <c>0</c>
+              <c>2.7616208520939</c>
+              <c>34071.7973406542</c>
+              <c>1810206.92598675</c>
+              <c>111.04652939094</c>
+              <c>125.766952068656</c>
+            </r>
+            <r>
+              <c>Zone 2</c>
+              <c>1819796</c>
+              <c>0</c>
+              <c>132</c>
+              <c>228</c>
+              <c>3492</c>
+              <c>0.302207221750494</c>
+              <c>38405.7246082348</c>
+              <c>0</c>
+              <c>20.3751223879809</c>
+              <c>6.08766054795136</c>
+            </r>
+            <r>
+              <c>Zone 3</c>
+              <c>4384524</c>
+              <c>0</c>
+              <c>4</c>
+              <c>276</c>
+              <c>288</c>
+              <c>1.38710122640234</c>
+              <c>20740.6550365412</c>
+              <c>0</c>
+              <c>1.56208455734426</c>
+              <c>34.0959210022238</c>
+            </r>
+            <r>
+              <c>Total</c>
+              <c>6986648</c>
+              <c>366923159.00616</c>
+              <c>1080</c>
+              <c>924</c>
+              <c />
+              <c>1.67947958788183</c>
+              <c>1602.2215665493</c>
+              <c>1514890.36470876</c>
+              <c>117.838238569696</c>
+              <c>80.3094795787884</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="534" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Excel Input.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Excel Input.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="642" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType>xlsx</TempFileType>
+          <BatchMode value="False" />
+          <DataField>Layout</DataField>
+          <Separator>Continuous</Separator>
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="1440" Height="7200" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="456" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>A company wants to automation the creation of an Excel report. 
+
+They have provided the 3 snippets that they want to be included in the Excel file, along with an example report.
+
+Please replicate the Excel output with the input data.</Text>
+          <Font name="Segoe UI" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="174" y="222" width="204" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the Table tool to take the data from the Text Input and Format into a table. 
+
+Stream the results into a Report Text tool to create a lable for the Table.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="174" y="522" width="204" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the Table tool to take the data from the Text Input and Format into a table. 
+
+Stream the results into a Report Text tool to create a lable for the Table.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="258" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the Report Text tool to create spacing.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="426" y="498" width="100" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the Report Text tool to create spacing.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="546" y="246" width="132" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Leverage the Report Layout tool to align the Report snippets and group togther.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="786" y="750" width="144" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use a Text Input tool to create a single blank cell for spacing and feed into a Table Tool</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="978" y="366" width="100" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Merge the report snippets into a single record via a Join Multiple tool.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1122" y="390" width="312" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Use the Report Layout tool to align the snippets horizontally. 
+
+Add a Report Title via the Report Text Tool and align at the top of the report.
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="105">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1494" y="522" width="100" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>The Render Tool allows you to save the output as a 
+
+PDF
+DOCX
+XLSX
+PNG
+HTML
+PPTX</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Step5_ReportFormatting_Solution</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

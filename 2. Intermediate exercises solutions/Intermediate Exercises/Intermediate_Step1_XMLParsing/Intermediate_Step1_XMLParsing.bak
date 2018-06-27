@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="270" width="204" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="270" width="204" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Input</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">XML.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>XML.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="CustomerDetail" size="1668" source="File: \\Netapp1\ftp\CastIron\Datamart\Prod\demand\archive\demand_ycc_20121210.xml" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="534" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9880_c5075afc634945a3a8226933d157901d_\Engine_8556_3295e0d12f4a4b89ba602dedbf6b70a9_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="438" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Customer_Bill_to_first_name" size="17" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_last_name" size="30" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_home_phone" size="30" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_email" size="39" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_organization" size="41" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_middle_name" size="1" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_address1" size="38" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_city" size="22" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_province_code" size="2" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_province" size="20" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_postal_code" size="10" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_country_code" size="2" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Bill_to_address2" size="30" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_address1" size="45" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_city" size="22" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_province_code" size="2" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_province" size="20" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_postal_code" size="7" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_country_code" size="2" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_address2" size="30" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_first_name" size="23" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_last_name" size="30" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_organization" size="37" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_home_phone" size="30" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Ship_to_email" size="38" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Customer_Reference" size="9" source="File: C:\Exercises\Intermediate\DataPrep_XMLParsing_18\Output.yxdb" type="V_String" />
+            <Field name="Order Number" size="21" source="File: \\Netapp1\ftp\CastIron\Datamart\Prod\demand\archive\demand_ycc_20121210.xml" type="V_String" />
+            <Field name="date" size="10" source="File: \\Netapp1\ftp\CastIron\Datamart\Prod\demand\archive\demand_ycc_20121210.xml" type="V_String" />
+            <Field name="source" size="9" source="File: \\Netapp1\ftp\CastIron\Datamart\Prod\demand\archive\demand_ycc_20121210.xml" type="V_String" />
+            <Field name="type" size="5" source="File: \\Netapp1\ftp\CastIron\Datamart\Prod\demand\archive\demand_ycc_20121210.xml" type="V_String" />
+            <Field name="business_type" size="15" source="File: \\Netapp1\ftp\CastIron\Datamart\Prod\demand\archive\demand_ycc_20121210.xml" type="V_String" />
+            <Field name="ship_via" size="4" source="File: \\Netapp1\ftp\CastIron\Datamart\Prod\demand\archive\demand_ycc_20121210.xml" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9880_c5075afc634945a3a8226933d157901d_\Engine_8556_e1d76ca7aba9471d8e14e8a4cae1a4e9_.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="564" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[A company receives customer purchase and shipping data on a weekly level based on web and catalog purchases. The company would like to analyze their customers and produce a profile by market by SKU. The challenge is that the data feed contains XML that needs to be parsed in order effectively analyze the data.
+
+The column called CustomerDetail contains the data that needs to be parsed into 26 unique fields detailing the customer contact information for both the “Bill To” and “Ship To” attributes. 
+
+Please note that the output fields names do not need to be exact.
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Step1_DataPrep_XMLParsing</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

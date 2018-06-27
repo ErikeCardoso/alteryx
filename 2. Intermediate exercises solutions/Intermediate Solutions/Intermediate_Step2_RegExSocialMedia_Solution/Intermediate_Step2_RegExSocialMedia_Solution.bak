@@ -1,0 +1,931 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="390" y="198" width="216" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="198" width="216" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Input</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="126" y="54" width="372" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[A company would like to capture how many hash tags are captured in social media sources. 
+
+Your goal is to build a workflow to determine what hash tags are referenced traced back to individual users. You need to represent this detail in a cross tab view grouped by hash tag. 
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="426" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="9" />
+          <Fields>
+            <Field name="RecordID" />
+            <Field name="hashtags" />
+            <Field name="id_str_3" />
+            <Field name="id_str_10" />
+            <Field name="id_str_13" />
+            <Field name="id_str_16" />
+            <Field name="id_str_17" />
+            <Field name="Total" />
+          </Fields>
+          <Data>
+            <r>
+              <c>5</c>
+              <c>#followme</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>#EEUU</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>#FF14</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>#beone</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>#deals</c>
+              <c>1</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>6</c>
+              <c>#followmejp</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>7</c>
+              <c>#help</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>8</c>
+              <c>#sougofollow</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>0</c>
+              <c>1</c>
+              <c>1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_10864_34f12a49b61b4cbf8b8c5cd6e15e83eb_\Engine_8556_a3676a15bb4f4fdfb21b64562f085835_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="522" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_10864_34f12a49b61b4cbf8b8c5cd6e15e83eb_\Engine_8556_4a4a8bbd80184f548c23c528d1f78922_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="162" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([text], '.*#.+')</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([text], '.*#.+')</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="id_str" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="id_str" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Left_created_at" selected="False" />
+                <SelectField field="Left_lang" selected="False" />
+                <SelectField field="Left_text" selected="True" rename="hashtags" />
+                <SelectField field="Left_user.screen_name" selected="False" />
+                <SelectField field="Right_created_at" selected="False" rename="Right_created_at" />
+                <SelectField field="Right_id_str" selected="False" rename="Right_id_str" />
+                <SelectField field="Right_lang" selected="False" rename="Right_lang" />
+                <SelectField field="Right_text" selected="False" />
+                <SelectField field="Right_user.screen_name" selected="False" rename="Right_user.screen_name" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="294" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>text</Field>
+          <RegExExpression value="#\w+" />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>text_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Tokenize:
+#\w+</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1134" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_10864_34f12a49b61b4cbf8b8c5cd6e15e83eb_\Engine_8556_29556cc9fbe44e05a97fde10890e15e7_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="690" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="hashtags" />
+          </GroupFields>
+          <HeaderField field="id_str" />
+          <DataField field="Count" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="hashtags" size="169" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="3" source="CrossTab:Header:id_str:3:Sum:" type="Int64" />
+            <Field name="10" source="CrossTab:Header:id_str:10:Sum:" type="Int64" />
+            <Field name="13" source="CrossTab:Header:id_str:13:Sum:" type="Int64" />
+            <Field name="16" source="CrossTab:Header:id_str:16:Sum:" type="Int64" />
+            <Field name="17" source="CrossTab:Header:id_str:17:Sum:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="hashtags" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Count" type="Int16" size="2" expression="1" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Count=1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="786" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="3" />
+            <Field name="10" />
+            <Field name="13" />
+            <Field name="16" />
+            <Field name="17" />
+            <Field name="*Unknown" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif</Expression>
+          <ChangeFieldType value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="870" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="3" />
+            <Field name="10" />
+            <Field name="13" />
+            <Field name="16" />
+            <Field name="17" />
+            <Field name="hashtags" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <Expression>'id_str_'+[_CurrentField_]</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="hashtags" size="169" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="id_str_3" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Int64" />
+            <Field name="id_str_10" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Int64" />
+            <Field name="id_str_13" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Int64" />
+            <Field name="id_str_16" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Int64" />
+            <Field name="id_str_17" source="Formula: if isnull([_CurrentField_]) then 0 else [_CurrentField_] endif" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="hashtags" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="702" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="hashtags" action="GroupBy" rename="hashtags" />
+            <SummarizeField field="Count" action="Sum" rename="Total" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="966" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="hashtags" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="hashtags" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_hashtags" selected="False" rename="Right_hashtags" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="138" y="522" width="132" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the filter tool to identify all records that contain the hash tag (#) symbol.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="234" y="318" width="204" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Use Regex Tool to extract the word immediately follwoing the hash tag symbol.
+
+Please Note Tokenize indicates that you will use the regex syntax as a delimieter similar to the text to culuns tool. ]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="378" y="510" width="100" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Join back to original stream to add the full text string back to the record.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_10864_34f12a49b61b4cbf8b8c5cd6e15e83eb_\Engine_8556_416304ca279e495cbc9ca59bfddcbdf0_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="486" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="id_str" />
+            <Field field="hashtags" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: id_str, hashtags</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="20" />
+          <Fields>
+            <Field name="created_at" />
+            <Field name="id_str" />
+            <Field name="lang" />
+            <Field name="text" />
+            <Field name="user.screen_name" />
+          </Fields>
+          <Data>
+            <r>
+              <c>2014-04-07T14:44:42Z</c>
+              <c>1</c>
+              <c>tl</c>
+              <c>@Joevvvtm old na din sya ati!! hahahaha</c>
+              <c>kristiemawen</c>
+            </r>
+            <r>
+              <c>2014-04-07T15:10:30Z</c>
+              <c>2</c>
+              <c>en</c>
+              <c>Beaba Babycook Pro Baby Food Processor and Steamer: Shop our selection of car seats, strollers, monitors, and ... http://t.co/gZwGTJxXgX</c>
+              <c>PolvoDyachixin</c>
+            </r>
+            <r>
+              <c>2014-04-08T08:36:04Z</c>
+              <c>3</c>
+              <c>de</c>
+              <c>#deals http://t.co/DUClDEDEKi TOSHIBA Satellite S75-A7221 Laptop W/ Intel Core i7 4700MQ 16GB Memory Windows 8 ... http://t.co/1BF1ZefULj</c>
+              <c>homeshopbuzz</c>
+            </r>
+            <r>
+              <c>2014-04-08T10:07:03Z</c>
+              <c>4</c>
+              <c>da</c>
+              <c>CPU temperature at 2014-04-08 10:07:02.896160 is 47.1 C</c>
+              <c>apaulpi</c>
+            </r>
+            <r>
+              <c>2014-04-08T12:00:04Z</c>
+              <c>5</c>
+              <c>in</c>
+              <c>@Nheng_anthy tidak mengeluh bo jga saki akan kapala jga pendam sikisa ati</c>
+              <c>yayat_kaharu29</c>
+            </r>
+            <r>
+              <c>2014-04-08T11:49:59Z</c>
+              <c>6</c>
+              <c>es</c>
+              <c>Snapdragon 805 llegarÃ¡ a los fabricantes a finales de abril, apuntando a la segunda mitad del aÃ±o http://t.co/PuUtlTQvZV</c>
+              <c>TecnoALTok</c>
+            </r>
+            <r>
+              <c>2014-04-09T06:06:08Z</c>
+              <c>7</c>
+              <c>fr</c>
+              <c>Le Costa Rica accuse le coup des restructurations chez Intel</c>
+              <c>VPs_Sanchez</c>
+            </r>
+            <r>
+              <c>2014-04-09T07:50:49Z</c>
+              <c>8</c>
+              <c>en</c>
+              <c>AMD Radeon R9 295x2 Review http://t.co/TTw1RFpH7E *BEAST! http://t.co/lePhEssLFN</c>
+              <c>yubbieH</c>
+            </r>
+            <r>
+              <c>2014-04-09T10:31:39Z</c>
+              <c>9</c>
+              <c>ja</c>
+              <c>@masmi_alc Opteron!!!!!! ãªãã§ã¯ã¼ã¯ã¹ãã¼ã·ã§ã³www</c>
+              <c>tenten2FXX</c>
+            </r>
+            <r>
+              <c>2014-04-09T14:07:52Z</c>
+              <c>10</c>
+              <c>es</c>
+              <c>RT @24HorasTVN: AMPLIACIÃN - #EEUU: apuÃ±alamiento mÃºltiple deja varios heridos en colegio de Pensilvania http://t.co/LLeCM39F8g http://t.coâ¦</c>
+              <c>Luengoyeinys</c>
+            </r>
+            <r>
+              <c>2014-04-09T14:22:11Z</c>
+              <c>11</c>
+              <c>es</c>
+              <c>@mariamartinezz7 q te entra ati llendote del grupoo o oo oooo o @24HorasTVN</c>
+              <c>victorgome98</c>
+            </r>
+            <r>
+              <c>2014-04-09T14:49:08Z</c>
+              <c>12</c>
+              <c>in</c>
+              <c>@DayanaMangshor @woeissan @AkimSuarKoyak dalam ati mna org tau..hahhh</c>
+              <c>leenote_89</c>
+            </r>
+            <r>
+              <c>2014-04-10T11:13:32Z</c>
+              <c>13</c>
+              <c>en</c>
+              <c>citeproc (1.0.1): http://t.co/Rsvtv8V29X      A cite processor interface for Citation Style Language (CSL) styles. #followme</c>
+              <c>rubygems</c>
+            </r>
+            <r>
+              <c>2014-04-10T13:26:52Z</c>
+              <c>14</c>
+              <c>es</c>
+              <c>"@FranRengel7: mira loque maa compraoo mi amiga @rihanna" qe fuerte ave te lo compra ati y ami no,sera puta http://t.co/8mvvs91jDA</c>
+              <c>mariadeamoor</c>
+            </r>
+            <r>
+              <c>2014-04-10T14:12:05Z</c>
+              <c>15</c>
+              <c>es</c>
+              <c>Por ahora Apple usa un procesador de banda base hechos por Qualcomm, que posee el 50% de la producciÃ³n junto con TSMC,</c>
+              <c>guelmi487</c>
+            </r>
+            <r>
+              <c>2014-04-10T14:33:14Z</c>
+              <c>16</c>
+              <c>pt</c>
+              <c>"Gata, assim vocÃª maltrata com essa cara de safada que atiÃ§a os vira-lata... " #help # crazy #beone # hashtag</c>
+              <c>juninho_lima</c>
+            </r>
+            <r>
+              <c>2014-04-10T14:08:13Z</c>
+              <c>17</c>
+              <c>ja</c>
+              <c>ã¤ãã¼ãªã¼ã¯ã·ã§ã³ããã½ã³ã³ãï¼°ï¼£ã[ï¾ï¾ï½µï½¸]Core i5 2500K/Dual 8GB/1TB/DVDÂ±R/Intel H61 http://t.co/hI0yIQLx2c #followme #followmejp #sougofollow</c>
+              <c>kabu352</c>
+            </r>
+            <r>
+              <c>2014-04-11T08:29:26Z</c>
+              <c>18</c>
+              <c>lt</c>
+              <c>4th Generation IntelÂ® Coreâ¢ i5-4200U processor (3M Cache, up to 2.6 GHz) http://t.co/Tw4QWqnD2G</c>
+              <c>masmi_alc</c>
+            </r>
+            <r>
+              <c>2014-04-11T09:11:03Z</c>
+              <c>19</c>
+              <c>ru</c>
+              <c>Ð¡ÐºÐ°ÑÐ°ÑÑ Ð´ÑÐ°Ð¹Ð²ÐµÑ intel usb 3.0: ÑÐºÐ°ÑÐ°ÑÑ Ð´ÑÐ°Ð¹Ð²ÐµÑ intel usb 3.0 http://t.co/YFXIyoja6d</c>
+              <c>24HorasTVN</c>
+            </r>
+            <r>
+              <c>2014-04-10T14:09:54Z</c>
+              <c>17</c>
+              <c>ja</c>
+              <c>http://t.co/HvuhDOZk3Q #FF14 SCORE:6440 1280x720 é«åè³ªï¼ãã¹ã¯ãããPCï¼ Intel(R) Core(TM) i7 CPU 870 @ 2.93GHz ATI Radeon HD 5700 Series</c>
+              <c>EmiRiA_yu</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="510" y="546" width="120" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Due to the upstream many to many join we need to take a unique of the id and # ]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="702" y="378" width="120" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the Cross Tab tool to horizontally allign the counts</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="762" y="654" width="132" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the Summarize tool to creat total aggregates across hash tag values.</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="23" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="23" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Join" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="33" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Join" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Unique" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Step2_Analysis_HashTagReferences_1_Solution</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
