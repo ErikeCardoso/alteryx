@@ -1,2 +1,2 @@
 # Alteryx
-This repository contains solutions to exercises used to prepare for Alteryx Desiner Core &amp; Advanced Certification Exam. 
+This repository contains solutions to preperation exercises outlined for Alteryx Desiner Core & Advanced Certification Exam. 
