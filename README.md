@@ -10,3 +10,7 @@ The repository has four folders, as follows:
 4. Macros
 
 Folders 1-3 contain two sub-folders with Exercises and Solutions (.yxmd). "Macros" folder contains macros files (.yxmc). 
+
+# How to use
+
+Alteryx Desiner is required to use/view files in this repository. You can have a 14-day trial access to Alteryx Desiner (see the official website).
