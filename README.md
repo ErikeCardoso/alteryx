@@ -4,7 +4,7 @@ This repository contains Alteryx Designer exercises (+ solutions) used to preper
 # Content
 The repository has four folders, as follows:
 
-*1. Beginner exercises solutions
+1. Beginner exercises solutions
 2. Intermediate exercises solutions
 3. Advanced exercises solutions
 4. Macros
